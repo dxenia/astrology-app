@@ -1,0 +1,52 @@
+/*------------ FONT IMPORTS ------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+@font-face {
+  font-family: 'Redro';
+  src: url('./assets/fonts/Redro.ttf') format('truetype');
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*------------ VARIABLES ------------*/
+
+:root {
+  /* font-weight */
+  --light-weight: 300;
+  --regular-weight: 400;
+  --medium-weight: 500;
+  --bold-weight: 600;
+
+  /* font-family */
+  --body-font: 'Inter', sans-serif;
+  --title-font: 'Redro';
+
+  /* MEDIA QUERIES: small, medium, large screens */
+}
+
+/*------------ GLOBAL STYLING ------------*/
+
+h1, h2, h3 {
+  font-family: var(--title-font);
+}
+
+body {
+  font-family: var(--body-font);
+  font-weight: var(--regular-weight);
+}
+
+a {
+  font-weight: var(--light-weight)
+}
+
+a:hover {
+  cursor: pointer;
+  font-weight: var(--bold-weight);
+}
