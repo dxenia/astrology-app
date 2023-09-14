@@ -1,0 +1,138 @@
+header {
+  background-color: #ffffffbb;
+  backdrop-filter: blur(5px);
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+}
+
+nav,
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  height: 2.5rem;
+}
+
+.logo {
+  font-family: var(--title-font);
+  font-size: 2rem;
+  padding-left: 1rem;
+  color: var(--text-color);
+}
+
+.nav__list {
+  gap: 2rem;
+  padding-right: 1rem;
+}
+
+.nav__item a {
+  text-transform: uppercase;
+  font-size: var(--small-size);
+  color: var(--text-color);
+}
+
+/*------------ mobile navigation ------------*/
+
+@media (max-width: 639px) {
+  .line {
+    display: block;
+    width: 1.8rem;
+    height: 0.4rem;
+    margin: 0.2rem auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #000000;
+  }
+
+  .line-rotate:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .line-rotate:nth-child(2) {
+    opacity: 0;
+  }
+
+  .line-rotate:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+  }
+
+  nav .menu {
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  header {
+    height: 4rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    padding-top: 1rem;
+  }
+
+  .nav__list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    transition: transform 1s ease-in-out;
+  }
+
+  nav .nav__list.open {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    animation-name: slide-in;
+    animation-duration: 0.5s;
+    transform: translateX(-100%) ease-in-out;
+  }
+
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-out {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+
+  .nav__item {
+    padding-right: 1rem;
+  }
+}

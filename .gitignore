@@ -25,5 +25,5 @@ dist-ssr
 
 # Extra
 src/data-backup/
-.prettierrc/
+.prettierrc
 
