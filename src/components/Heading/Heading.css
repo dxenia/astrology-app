@@ -1,6 +1,6 @@
 h1 {
   font-family: var(--title-font);
-  font-size: 11rem;
+  font-size: 10rem;
   text-align: left;
 }
 
@@ -13,10 +13,11 @@ h2 {
 
 h3 {
   font-family: var(--highlight-font);
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 2rem;
+  line-height: 2rem;
 }
 
 h4 {
-  font-family: var(--highlight-font);
+  font-size: 1.5rem;
+  font-weight: var(--light-weight);
 }

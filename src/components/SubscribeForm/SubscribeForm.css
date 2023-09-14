@@ -1,0 +1,16 @@
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 2rem;
+  color: #ffffff;
+  width: 50%;
+}
+
+.subscribe-form input {
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}

@@ -7,11 +7,11 @@
   align-items: center;
   padding-top: 10%;
   gap: 1rem;
-  background: rgb(255, 213, 109);
+  background: rgba(255, 214, 109, 0.675);
   background: radial-gradient(
     circle,
     rgba(255, 213, 109, 1) 0%,
-    rgba(255, 255, 255, 1) 30%
+    rgba(255, 255, 255, 1) 40%
   );
 }
 
@@ -56,6 +56,10 @@
   height: 100vh;
   margin: 15% auto;
   width: 80%;
+}
+
+.home__main--heading {
+  font-size: 2rem;
 }
 
 .home__main--img {
@@ -106,4 +110,29 @@
   100% {
     transform: translate(0, 0) rotate(0deg);
   }
+}
+
+/* subscribe form */
+
+.form__section {
+  background-color: #000000;
+  color: white;
+}
+
+.form__wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  padding: 2rem;
+  width: 60%;
+}
+
+.form__wrapper article {
+  width: 50%;
+  text-align: left;
+}
+
+.form__info {
+  width: 50%;
 }
