@@ -1,0 +1,22 @@
+h1 {
+  font-family: var(--title-font);
+  font-size: 11rem;
+  text-align: left;
+}
+
+h2 {
+  font-family: var(--title-font);
+  font-size: var(--large-size);
+  text-align: center;
+  padding-top: 10%;
+}
+
+h3 {
+  font-family: var(--highlight-font);
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+h4 {
+  font-family: var(--highlight-font);
+}

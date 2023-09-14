@@ -65,18 +65,6 @@
 
 /*------------ GLOBAL STYLING ------------*/
 
-h1,
-h2 {
-  font-family: var(--title-font);
-  font-size: var(--large-size);
-  text-align: center;
-  padding-top: 10%;
-}
-
-h3 {
-  font-family: var(--highlight-font);
-}
-
 body {
   font-family: var(--body-font);
   font-weight: var(--light-weight);
