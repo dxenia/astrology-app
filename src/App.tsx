@@ -8,6 +8,7 @@ import Home from '../src/pages/Home/Home';
 import About from './pages/About/About';
 import Tarot from './pages/Tarot/Tarot';
 import Zodiac from './pages/Zodiac/Zodiac';
+import ZodiacSignDetails from './pages/ZodiacSignDetails/ZodiacSignDetails';
 
 import './App.css';
 
@@ -31,6 +32,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/zodiac" element={<Zodiac />} />
+          <Route path="/zodiac/:id" element={<ZodiacSignDetails />} />
           <Route path="/tarot" element={<Tarot />} />
         </Routes>
         <button onClick={toggleTheme}>Switch theme</button>
