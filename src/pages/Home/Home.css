@@ -7,12 +7,6 @@
   align-items: center;
   padding-top: 10%;
   gap: 1rem;
-  background: rgba(255, 214, 109, 0.675);
-  background: radial-gradient(
-    circle,
-    rgba(255, 213, 109, 1) 0%,
-    rgba(255, 255, 255, 1) 40%
-  );
 }
 
 .home__intro--info {
@@ -31,6 +25,12 @@
   width: 30rem;
   height: 30rem;
   animation: rotation 20s infinite linear;
+  background: rgb(222, 170, 40);
+  background: radial-gradient(
+    circle,
+    rgb(214, 167, 48) 0%,
+    rgba(255, 255, 255, 0) 50%
+  );
 }
 
 @keyframes rotation {
@@ -86,10 +86,6 @@
   margin-bottom: 1rem;
 }
 
-/* .home__main--item:nth-child(3) > .home__main--icon {
-  opacity: 50%;
-} */
-
 .home__main--icon:hover {
   animation: skew-y-shaking 0.3s infinite;
 }
@@ -115,7 +111,7 @@
 /* subscribe form */
 
 .form__section {
-  background-color: #000000;
+  background-color: #121212;
   color: white;
 }
 
@@ -135,4 +131,22 @@
 
 .form__info {
   width: 50%;
+}
+
+#dark .home__main--item:nth-child(3) > .home__main--icon {
+  opacity: 50%;
+}
+
+#dark .home__intro {
+  background: rgba(255, 214, 109, 0.675);
+  background: radial-gradient(circle, rgb(65, 1, 160) 0%, rgb(0, 0, 0) 40%)
+    rgba(19, 19, 19, 0.675);
+}
+
+#dark .home__intro--img {
+  background: none;
+}
+
+#dark .form__section {
+  background-color: rgb(28, 0, 88);
 }

@@ -136,3 +136,13 @@ nav,
     padding-right: 1rem;
   }
 }
+
+#dark .header,
+#dark .nav {
+  background-color: #000000;
+}
+
+#dark .nav__item a,
+#dark .logo {
+  color: #ffffff;
+}

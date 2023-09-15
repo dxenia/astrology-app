@@ -1,3 +1,4 @@
+import Heading from '../Heading/Heading';
 import { AstrologyProps } from '../../types/AstrologyProps';
 
 const AstrologyCard: React.FC<AstrologyProps> = ({
@@ -7,7 +8,7 @@ const AstrologyCard: React.FC<AstrologyProps> = ({
 }: AstrologyProps) => {
   return (
     <div className="card__item">
-      <h3>{name}</h3>
+      <Heading element="h4">{name}</Heading>
       <img src={image} width="100rem" className="temp_img"></img>
       <p>Dates: {dates}</p>
     </div>
