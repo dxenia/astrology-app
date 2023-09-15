@@ -6,7 +6,9 @@ import ZodiacCard from '../../components/ZodiacCard/ZodiacCard.tsx';
 function Zodiac() {
   const url = 'https://jps-tarot-api.azurewebsites.net/api/Zodiac/Get';
 
-  const { data, loading, error } = useFetch(url);
+  const { data: signs, error, loading } = useFetch<ZodiacProps[]>(url);
+
+  console.log(signs);
 
   if (error) {
     console.log(`Error: ${error.message}`);
@@ -16,12 +18,11 @@ function Zodiac() {
     <>
       <div>
         <h2>Astrology</h2>
-        {loading && (
-          <div className="loading">Loading data, please hang on...</div>
-        )}
-        <div className="astrology__list">
-          {(data ?? []).map((card: ZodiacProps, index: number) => (
-            <ZodiacCard key={index} sign={card} />
+        {error && <div>{error?.message}</div>}
+        {loading && <div>is loading </div>}
+        <div>
+          {signs?.map((sign) => (
+            <ZodiacCard key={sign.id} sign={sign} />
           ))}
         </div>
       </div>

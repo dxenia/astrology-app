@@ -1,31 +1,39 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
-// Custom reusable hook for fetching API
-export default function useFetch(url: string) {
-  const [data, setData] = useState(null);
+const useFetch = <T,>(url: string) => {
+  const [data, setData] = useState<T | null>(null);
   const [error, setError] = useState<Error | null>(null);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     (async function () {
+      const controller = new AbortController();
+      const signal = controller.signal;
+
       try {
         setLoading(true);
 
-        console.log(' fetch called');
+        console.log('fetch called');
 
-        const response = await fetch(url);
+        const response = await fetch(url, { signal });
         const data = await response.json();
 
         setData(data);
       } catch (error) {
-        // console.error(error);
+        console.log(error);
 
         setError(error as Error);
       } finally {
-        setLoading(false);
+        setTimeout(() => {
+          setLoading(false);
+        }, 700);
       }
+
+      return () => controller?.abort();
     })();
   }, [url]);
 
   return { data, error, loading };
-}
+};
+
+export default useFetch;

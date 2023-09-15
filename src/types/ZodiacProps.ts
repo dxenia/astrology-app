@@ -1,4 +1,5 @@
 export interface ZodiacProps {
+  id: number;
   elementId?: number;
   modalityId?: number;
   rulerId?: number;
@@ -7,4 +8,12 @@ export interface ZodiacProps {
   positiveTraits?: string[];
   negativeTraits?: string[];
   image: string;
+}
+
+export interface ZodiacResponse {
+  data: ZodiacProps[];
+}
+
+export interface ZodiacSignResponse {
+  data: ZodiacProps;
 }
