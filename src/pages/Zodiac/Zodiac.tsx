@@ -1,9 +1,9 @@
 import './Zodiac.css';
 import useFetch from '../../hooks/useFetch.tsx';
-import { AstrologyProps } from '../../types/AstrologyProps.ts';
-import AstrologyCard from '../../components/Cards/AstrologyCard.tsx';
+import { ZodiacProps } from '../../types/ZodiacProps.ts';
+import ZodiacCard from '../../components/ZodiacCard/ZodiacCard.tsx';
 
-export const Zodiac = () => {
+function Zodiac() {
   const url = 'https://jps-tarot-api.azurewebsites.net/api/Zodiac/Get';
 
   const { data, loading, error } = useFetch(url);
@@ -20,16 +20,13 @@ export const Zodiac = () => {
           <div className="loading">Loading data, please hang on...</div>
         )}
         <div className="astrology__list">
-          {(data ?? []).map((card: AstrologyProps, index: number) => (
-            <AstrologyCard
-              key={index}
-              name={card.name}
-              image={card.image}
-              dates={card.dates}
-            />
+          {(data ?? []).map((card: ZodiacProps, index: number) => (
+            <ZodiacCard key={index} sign={card} />
           ))}
         </div>
       </div>
     </>
   );
-};
+}
+
+export default Zodiac;

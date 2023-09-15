@@ -3,7 +3,7 @@ import useFetch from '../../hooks/useFetch.tsx';
 import TarotCard from '../../components/Cards/TarotCard.tsx';
 import { TarotProps } from '../../types/TarotProps.ts';
 
-export const Tarot = () => {
+export default function Tarot() {
   const url = 'https://jps-tarot-api.azurewebsites.net/api/Tarot/Get';
   const { data, loading, error } = useFetch(url);
 
@@ -32,4 +32,4 @@ export const Tarot = () => {
       </div>
     </div>
   );
-};
+}
