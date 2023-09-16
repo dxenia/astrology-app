@@ -6,7 +6,6 @@ import Loading from '../../components/Loading/Loading.tsx';
 
 function Zodiac() {
   const url = 'https://jps-tarot-api.azurewebsites.net/api/Zodiac/Get';
-
   const { data: signs, error, loading } = useFetch<ZodiacProps[]>(url);
 
   console.log(signs);
