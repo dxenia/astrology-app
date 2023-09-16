@@ -4,6 +4,7 @@ import { TarotCardProps } from './TarotCard.types.ts';
 import './TarotCard.css';
 
 function TarotCard({ card }: TarotCardProps) {
+  
   return (
     <div className="flip-card">
       <div className="flip-card__inner">
