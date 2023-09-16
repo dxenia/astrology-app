@@ -1,12 +1,6 @@
 .astrology__list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   padding: 3rem;
   gap: 1rem;
-}
-
-.card__item {
-  border: 1px solid black;
-  padding: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.173) 0.5rem 0.5rem 0.5rem;
 }

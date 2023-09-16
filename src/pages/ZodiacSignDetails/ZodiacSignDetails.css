@@ -1,0 +1,13 @@
+.card__details {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.card__details h3 {
+  margin-top: 2rem;
+}

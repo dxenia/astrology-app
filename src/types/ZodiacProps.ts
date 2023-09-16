@@ -1,19 +1,20 @@
 export interface ZodiacProps {
   id: number;
-  elementId?: number;
-  modalityId?: number;
-  rulerId?: number;
+  elementId: number;
+  modalityId: number;
+  rulerId: number;
   name: string;
   dates: string;
-  positiveTraits?: string[];
-  negativeTraits?: string[];
+  positiveTraits: string[];
+  negativeTraits: string[];
   image: string;
-}
-
-export interface ZodiacResponse {
-  data: ZodiacProps[];
-}
-
-export interface ZodiacSignResponse {
-  data: ZodiacProps;
+  element: { image: string; keywords: string[]; name: string };
+  ruler: {
+    image: string;
+    keywords: string[];
+    name: string;
+    transition: string;
+    type: string;
+  };
+  modality: { image: string; keywords: string[]; name: string };
 }

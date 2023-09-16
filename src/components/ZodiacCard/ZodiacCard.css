@@ -1,0 +1,18 @@
+.card__link {
+  color: #000000;
+}
+
+.card__item {
+  border: 1px solid #000000;
+  padding: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.173) 0.5rem 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card__item--img {
+  height: 5rem;
+}

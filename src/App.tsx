@@ -9,6 +9,7 @@ import About from './pages/About/About';
 import Tarot from './pages/Tarot/Tarot';
 import Zodiac from './pages/Zodiac/Zodiac';
 import ZodiacSignDetails from './pages/ZodiacSignDetails/ZodiacSignDetails';
+import NotFound from './pages/NotFound/NotFound';
 
 import './App.css';
 
@@ -34,6 +35,7 @@ function App() {
           <Route path="/zodiac" element={<Zodiac />} />
           <Route path="/zodiac/:id" element={<ZodiacSignDetails />} />
           <Route path="/tarot" element={<Tarot />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <button onClick={toggleTheme}>Switch theme</button>
         <Footer />
