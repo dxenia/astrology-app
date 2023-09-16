@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom';
 
 import './Button.css';
 
-type ButtonProps = {
+interface ButtonProps {
   children: string;
   url: string;
   target: '_blank' | '_self';
   className?: string;
-};
+}
 
 const LearnMoreButton = ({ children, url, target, className }: ButtonProps) => {
   return (

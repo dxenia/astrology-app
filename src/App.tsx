@@ -26,10 +26,11 @@ function App() {
   const toggleTheme = () => {
     setTheme((curr) => (curr === 'light' ? 'dark' : 'light'));
   };
+
   return (
     <ThemeContext.Provider value={{ theme }}>
       <div className="App" id={theme}>
-        <Header />
+        <Header handleTheme={toggleTheme} theme={theme} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -39,7 +40,6 @@ function App() {
           <Route path="/reading" element={<CardReading />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-        <button onClick={toggleTheme}>Switch theme</button>
         <Footer />
       </div>
     </ThemeContext.Provider>
