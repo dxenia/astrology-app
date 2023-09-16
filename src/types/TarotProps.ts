@@ -7,3 +7,8 @@ export interface TarotProps {
   type: 'Major' | 'Minor';
   upright: string[];
 }
+
+export interface ApiResponse {
+  id: number;
+  card: TarotProps;
+}

@@ -12,6 +12,7 @@ import ZodiacSignDetails from './pages/ZodiacSignDetails/ZodiacSignDetails';
 import NotFound from './pages/NotFound/NotFound';
 
 import './App.css';
+import CardReading from './pages/CardReading/CardReading';
 
 type ThemeContextType = {
   theme: string;
@@ -35,6 +36,7 @@ function App() {
           <Route path="/zodiac" element={<Zodiac />} />
           <Route path="/zodiac/:id" element={<ZodiacSignDetails />} />
           <Route path="/tarot" element={<Tarot />} />
+          <Route path="/reading" element={<CardReading />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <button onClick={toggleTheme}>Switch theme</button>

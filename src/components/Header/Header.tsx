@@ -71,6 +71,17 @@ export default function Header() {
               Tarot Card Library
             </NavLink>
           </li>
+          <li className="nav__item">
+            <NavLink
+              to="/reading"
+              className={
+                location.pathname === '/reading' ? 'active' : 'nav__link'
+              }
+              onClick={closeMenu}
+            >
+              Card Reading
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>
