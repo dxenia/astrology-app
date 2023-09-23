@@ -42,7 +42,7 @@ nav,
 
 /*------------ mobile navigation ------------*/
 
-@media (max-width: 639px) {
+@media (max-width: 767px) {
   .line {
     display: block;
     width: 1.8rem;
@@ -100,7 +100,6 @@ nav,
   nav .nav__list.open {
     display: flex;
     align-items: flex-end;
-    margin-top: 1rem;
     padding-top: 2rem;
     padding-bottom: 100vh;
     width: 100%;

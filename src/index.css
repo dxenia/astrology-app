@@ -41,7 +41,7 @@
 
 @media (min-width: 768px) {
   :root {
-    --small-size: 0.8rem;
+    --small-size: 0.5rem;
     --regular-size: 0.8rem;
     --large-size: 4rem;
   }

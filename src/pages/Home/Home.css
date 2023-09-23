@@ -169,3 +169,51 @@
 #dark .form__section {
   background-color: rgb(28, 0, 88);
 }
+
+@media (min-width: 768px) {
+  .home__main--info {
+    flex-direction: row;
+  }
+
+  .home__main--item {
+    width: 30%;
+  }
+
+  .form__wrapper {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .home__main--info {
+    flex-direction: row;
+  }
+
+  .home__main--item {
+    width: 30%;
+  }
+
+  .form__wrapper {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .home__intro {
+    flex-direction: row;
+    padding: 5%;
+  }
+
+  .home__intro--img {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  #dark .home__intro {
+    background: rgba(255, 214, 109, 0.675);
+    background: radial-gradient(circle, rgb(65, 1, 160) 0%, rgb(0, 0, 0) 40%)
+      rgba(19, 19, 19, 0.675);
+  }
+}

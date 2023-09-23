@@ -1,0 +1,13 @@
+.reading--description {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.card__list--reading {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  gap: 1rem;
+  padding: 1rem;
+}

@@ -13,17 +13,25 @@ export default function CardReading() {
   }
 
   const handleRerenderClick = () => {
-    window.location.reload(); // Toggle the state value to trigger a re-render
+    window.location.reload();
   };
 
   return (
     <div>
       <h2>Tarot Card Reading</h2>
+      <p className="reading--description">
+        The history of tarot card reading is marked by a blend of traditional
+        playing card origins and the overlay of esoteric and mystical
+        interpretations. Today, tarot cards are used by individuals for a wide
+        range of purposes, including personal insight, meditation,
+        self-discovery, and entertainment. The practice continues to evolve and
+        adapt in response to changing beliefs and cultural contexts.
+      </p>
       {error && <div>{error?.message}</div>}
       {loading && <Loading />}
-      <div className="card__list">
+      <div className="card__list--reading">
         {' '}
-        <div className="card__list">
+        <div className="card__list--reading">
           {cards?.slice(0, 3).map((card) => (
             <TarotCard key={card.id} card={card} />
           ))}
