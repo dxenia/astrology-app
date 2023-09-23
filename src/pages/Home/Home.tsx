@@ -24,10 +24,8 @@ export default function Home() {
     <div className="home__scroll">
       <section className="home__intro">
         <div className="home__intro--info">
-          <Heading element="h1">lunar☾</Heading>
-          <Heading element="h3" className="home__intro--heading">
-            Astrology in your pocket.
-          </Heading>
+          <h1 className="home__central-heading">lunar☾</h1>
+          <h3 className="home__heading">Astrology in your pocket.</h3>
           <p className="home__intro--subheading">
             Welcome to the mystical world of Lunar, your gateway to unlocking
             the secrets of the cosmos and discovering the hidden truths that lie
@@ -43,9 +41,7 @@ export default function Home() {
         <img src={zodiacWheel} className="home__intro--img"></img>
       </section>
       <section className="home__main">
-        <Heading element="h3" className="home__main--heading">
-          What can you find on Lunar?
-        </Heading>
+        <h3 className="home__heading">What can you find on Lunar?</h3>
         <ul className="home__main--info">
           <li className="home__main--item">
             <img src={moth} className="home__main--icon"></img>

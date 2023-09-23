@@ -1,4 +1,5 @@
 import { PaginationProps } from '../../types/PaginationProps';
+import './Pagination.css';
 
 export const Pagination: React.FC<PaginationProps> = ({
   page,
@@ -7,7 +8,7 @@ export const Pagination: React.FC<PaginationProps> = ({
 }) => {
   return (
     <div>
-      <div>
+      <div className="pagination">
         {page !== 1 && (
           <button onClick={() => handlePagination(page - 1)} type="button">
             &lt;

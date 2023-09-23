@@ -34,12 +34,7 @@ export default function Tarot() {
   }
 
   return (
-    <div className="page">
-      <Pagination
-        page={page}
-        totalPages={totalPages}
-        handlePagination={setPage}
-      />
+    <div>
       <h2>Tarot Cards</h2>
       {error && <div>{error?.message}</div>}
       {loading && <Loading />}
@@ -48,6 +43,11 @@ export default function Tarot() {
           <TarotCard key={card.id} card={card} />
         ))}
       </div>
+      <Pagination
+        page={page}
+        totalPages={totalPages}
+        handlePagination={setPage}
+      />
     </div>
   );
 }

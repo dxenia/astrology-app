@@ -1,3 +1,4 @@
+// App.js
 import { Route, Routes } from 'react-router-dom';
 import { createContext, useState } from 'react';
 
@@ -10,27 +11,25 @@ import Tarot from './pages/Tarot/Tarot';
 import Zodiac from './pages/Zodiac/Zodiac';
 import ZodiacSignDetails from './pages/ZodiacSignDetails/ZodiacSignDetails';
 import NotFound from './pages/NotFound/NotFound';
-
-import './App.css';
 import CardReading from './pages/CardReading/CardReading';
 
-type ThemeContextType = {
-  theme: string;
-};
+import './App.css';
 
-export const ThemeContext = createContext<ThemeContextType | null>(null);
+type Theme = 'light' | 'dark';
+type ThemeContext = { theme: Theme; toggleTheme: () => void };
+
+export const ThemeContext = createContext<ThemeContext>({} as ThemeContext);
 
 function App() {
-  const [theme, setTheme] = useState('light');
-
+  const [theme, setTheme] = useState<Theme>('light');
   const toggleTheme = () => {
-    setTheme((curr) => (curr === 'light' ? 'dark' : 'light'));
+    setTheme(theme === 'light' ? 'dark' : 'light');
   };
 
   return (
-    <ThemeContext.Provider value={{ theme }}>
-      <div className="App" id={theme}>
-        <Header handleTheme={toggleTheme} theme={theme} />
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      <div id={theme}>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

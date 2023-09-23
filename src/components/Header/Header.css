@@ -78,7 +78,7 @@ nav,
   }
 
   header {
-    height: 4rem;
+    height: 6.1rem;
   }
 
   nav {
@@ -137,12 +137,19 @@ nav,
   }
 }
 
-#dark .header,
-#dark .nav {
-  background-color: #000000;
+#dark header {
+  background-color: #000000c0;
 }
 
 #dark .nav__item a,
 #dark .logo {
   color: #ffffff;
+}
+
+#dark nav .nav__list.open {
+  background-color: #000000;
+}
+
+#dark .line {
+  background-color: #ffffff;
 }

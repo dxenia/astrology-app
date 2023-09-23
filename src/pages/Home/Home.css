@@ -1,8 +1,11 @@
 /* first section */
+.home__central-heading {
+  font-size: 6rem;
+}
 
 .home__intro {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 10%;
@@ -10,7 +13,17 @@
 }
 
 .home__intro--info {
-  width: 40%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.home__heading {
+  margin: auto;
+  width: 90%;
 }
 
 .home__intro--subheading {
@@ -22,8 +35,8 @@
 }
 
 .home__intro--img {
-  width: 30rem;
-  height: 30rem;
+  width: 17rem;
+  height: 17rem;
   animation: rotation 20s infinite linear;
   background: rgb(222, 170, 40);
   background: radial-gradient(
@@ -44,6 +57,11 @@
 
 .home__intro--button {
   margin: 1rem auto;
+  font-size: 1.2rem;
+}
+
+.home__intro--button:hover {
+  background-color: rgb(222, 170, 40);
 }
 
 /* second section */
@@ -53,7 +71,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   margin: 15% auto;
   width: 80%;
 }
@@ -68,6 +85,7 @@
 
 .home__main--info {
   display: flex;
+  flex-direction: column;
   gap: 2rem;
   padding: 2rem;
   text-align: justify;
@@ -119,6 +137,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
+  flex-direction: column;
   margin: auto;
   padding: 2rem;
   width: 60%;
@@ -139,7 +158,7 @@
 
 #dark .home__intro {
   background: rgba(255, 214, 109, 0.675);
-  background: radial-gradient(circle, rgb(65, 1, 160) 0%, rgb(0, 0, 0) 40%)
+  background: radial-gradient(circle, rgb(65, 1, 160) 0%, rgb(0, 0, 0) 80%)
     rgba(19, 19, 19, 0.675);
 }
 

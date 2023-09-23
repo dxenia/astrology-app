@@ -1,11 +1,10 @@
 import { NavLink, useLocation } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 
-import ToggleTheme from '../ToggleTheme/ToggleTheme';
-import { ToggleThemeProps } from '../ToggleTheme/ToggleTheme';
+import { ThemeContext } from '../../App';
 import './Header.css';
 
-export default function Header({ handleTheme, theme }: ToggleThemeProps) {
+export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const location = useLocation();
@@ -16,13 +15,21 @@ export default function Header({ handleTheme, theme }: ToggleThemeProps) {
 
   const hamburger = isOpen ? 'line line-rotate' : 'line';
 
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
   return (
     <header>
       <nav className="nav">
         <NavLink className="logo" to="/">
           lunar
         </NavLink>
-        <ToggleTheme handleTheme={handleTheme} theme={theme}></ToggleTheme>
+        <button onClick={toggleTheme} className="theme-button">
+          {theme === 'dark' ? (
+            <span>🌞 Switch to light mode</span>
+          ) : (
+            <span>🌚 Switch to dark mode</span>
+          )}
+        </button>
         <div
           className="menu"
           onClick={() => {

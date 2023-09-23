@@ -1,5 +1,5 @@
 /*------------ FONT IMPORTS & RESET ------------*/
-
+@import url('./normalize.css');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
 
 @font-face {
@@ -10,14 +10,6 @@
 @font-face {
   font-family: 'Akira';
   src: url('./assets/fonts/Akira.ttf') format('truetype');
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 /*------------ VARIABLES ------------*/
