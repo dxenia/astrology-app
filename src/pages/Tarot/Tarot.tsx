@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import useFetch from '../../hooks/useFetch.tsx';
 import TarotCard from '../../components/TarotCard/TarotCard.tsx';
 import Loading from '../../components/Loading/Loading.tsx';
@@ -15,21 +15,23 @@ export default function Tarot() {
   const url = 'https://jps-tarot-api.azurewebsites.net/api/Tarot/Get';
   const { data: cards, loading, error } = useFetch<TarotProps[]>(url);
 
-  const filteredCards = cards?.filter((card) => {
+  const filteredCards = useMemo(() => {
     if (filterCriteria === 'All') {
-      return true;
+      return cards;
     }
-    return card.type === filterCriteria;
-  });
+    return cards?.filter((card) => card.type === filterCriteria);
+  }, [cards, filterCriteria]);
 
-  const totalFilteredPages = Math.ceil(
-    (filteredCards?.length || 0) / itemsPerPage
-  );
+  const totalFilteredPages = useMemo(() => {
+    return Math.ceil((filteredCards?.length || 0) / itemsPerPage);
+  }, [filteredCards]);
 
   const startIndex = (page - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
 
-  const cardsToDisplay = filteredCards?.slice(startIndex, endIndex) || [];
+  const cardsToDisplay = useMemo(() => {
+    return filteredCards?.slice(startIndex, endIndex) || [];
+  }, [filteredCards, startIndex, endIndex]);
 
   useEffect(() => {
     if (page < 1) {
@@ -70,7 +72,7 @@ export default function Tarot() {
       </div>
       <Pagination
         page={page}
-        totalPages={totalFilteredPages} // Use the total pages of filtered cards
+        totalPages={totalFilteredPages}
         handlePagination={setPage}
       />
     </div>
