@@ -1,0 +1,17 @@
+.box {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.box-ul {
+  width: 15rem;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  gap: 1rem;
+}
+
+.box-ul li {
+  width: 100%;
+}

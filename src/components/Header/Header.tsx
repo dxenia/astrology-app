@@ -1,7 +1,7 @@
+import { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { useState, useContext } from 'react';
 
-import { ThemeContext } from '../../App';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 import './Header.css';
 
 export default function Header() {
@@ -13,34 +13,29 @@ export default function Header() {
     setIsOpen(false);
   };
 
+  const openClose = isOpen ? 'open' : 'close';
   const hamburger = isOpen ? 'line line-rotate' : 'line';
-
-  const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
     <header>
-      <nav className="nav">
-        <NavLink className="logo" to="/">
-          lunar
-        </NavLink>
-        <button onClick={toggleTheme} className="theme-button">
-          {theme === 'dark' ? (
-            <span>🌞 Switch to light mode</span>
-          ) : (
-            <span>🌚 Switch to dark mode</span>
-          )}
-        </button>
-        <div
-          className="menu"
-          onClick={() => {
-            setIsOpen(!isOpen);
-          }}
-        >
-          <span className={hamburger}></span>
-          <span className={hamburger}></span>
-          <span className={hamburger}></span>
+      <nav className={`nav ${openClose}`}>
+        <div className="nav__options">
+          <NavLink className="logo" to="/">
+            lunar
+          </NavLink>
+          <ThemeToggle />
+          <div
+            className={`menu ${openClose}`}
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
+          >
+            <span className={hamburger}></span>
+            <span className={hamburger}></span>
+            <span className={hamburger}></span>
+          </div>
         </div>
-        <ul className={isOpen ? 'nav__list open' : 'nav__list'}>
+        <ul className={`nav__list ${openClose}`}>
           <li className="nav__item">
             <NavLink
               to="/"

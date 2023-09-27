@@ -10,6 +10,14 @@ header {
   z-index: 99999;
 }
 
+.nav__options {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
 nav,
 .nav__list {
   display: flex;
@@ -43,6 +51,20 @@ nav,
 /*------------ mobile navigation ------------*/
 
 @media (max-width: 767px) {
+  header {
+    height: 6.1rem;
+  }
+
+  .nav__options {
+    flex-direction: column;
+    justify-items: center;
+    gap: 0;
+  }
+
+  .logo {
+    padding-left: 0;
+  }
+
   .line {
     display: block;
     width: 1.8rem;
@@ -50,7 +72,7 @@ nav,
     margin: 0.2rem auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #000000;
+    background-color: --var(--black-color);
   }
 
   .line-rotate:nth-child(1) {
@@ -77,10 +99,6 @@ nav,
     height: 2rem;
   }
 
-  header {
-    height: 6.1rem;
-  }
-
   nav {
     flex-direction: column;
     align-items: center;
@@ -94,19 +112,24 @@ nav,
     display: none;
     flex-direction: column;
     width: 100%;
-    transition: transform 1s ease-in-out;
   }
 
   nav .nav__list.open {
     display: flex;
     align-items: flex-end;
+    margin-top: 1.5rem;
     padding-top: 2rem;
     padding-bottom: 100vh;
     width: 100%;
     background-color: rgb(255, 255, 255);
     animation-name: slide-in;
     animation-duration: 0.5s;
-    transform: translateX(-100%) ease-in-out;
+  }
+
+  nav .nav__list.close {
+    width: 100%;
+    animation-name: slide-out;
+    animation-duration: 1s;
   }
 
   @keyframes slide-in {
@@ -146,9 +169,9 @@ nav,
 }
 
 #dark nav .nav__list.open {
-  background-color: #000000;
+  background-color: var(--black-color);
 }
 
 #dark .line {
-  background-color: #ffffff;
+  background-color: var(--white-color);
 }

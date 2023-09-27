@@ -1,4 +1,3 @@
-// App.js
 import { Route, Routes } from 'react-router-dom';
 import { createContext, useState } from 'react';
 
@@ -22,6 +21,7 @@ export const ThemeContext = createContext<ThemeContext>({} as ThemeContext);
 
 function App() {
   const [theme, setTheme] = useState<Theme>('light');
+
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };

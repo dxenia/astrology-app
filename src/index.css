@@ -27,9 +27,12 @@
   --highlight-font: 'Akira';
 
   /* color */
-  --text-color: rgb(0, 0, 0);
-  --background-color: rgb(255, 255, 255);
-  --highlight-color: rgb(255, 165, 0);
+  --black-color: rgb(0, 0, 0);
+  --dark-grey-color: rgb(83, 83, 83);
+  --light-grey-color: rgb(206, 206, 206);
+  --white-color: rgb(255, 255, 255);
+  --orange-color: rgb(255, 165, 0);
+  --purple-color: rgb(136, 0, 255);
 
   /* font-size */
   --small-size: 1rem;
@@ -62,6 +65,7 @@ body {
   font-weight: var(--light-weight);
   font-size: 0.9rem;
   letter-spacing: 0.05rem;
+  min-height: 100vh;
 }
 
 a {
