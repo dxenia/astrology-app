@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo } from 'react';
+import { useEffect, useState } from 'react';
 import useFetch from '../../hooks/useFetch.tsx';
 import TarotCard from '../../components/TarotCard/TarotCard.tsx';
 import Loading from '../../components/Loading/Loading.tsx';
@@ -10,28 +10,31 @@ import '../Tarot/Tarot.css';
 export default function Tarot() {
   const [page, setPage] = useState(1);
   const [filterCriteria, setFilterCriteria] = useState('All');
+  const [searchQuery, setSearchQuery] = useState('');
   const itemsPerPage = 10;
 
   const url = 'https://jps-tarot-api.azurewebsites.net/api/Tarot/Get';
   const { data: cards, loading, error } = useFetch<TarotProps[]>(url);
 
-  const filteredCards = useMemo(() => {
+  // Filter cards based on search query
+  const filteredCards = cards?.filter((card) => {
     if (filterCriteria === 'All') {
-      return cards;
+      return card.name.toLowerCase().includes(searchQuery.toLowerCase());
     }
-    return cards?.filter((card) => card.type === filterCriteria);
-  }, [cards, filterCriteria]);
+    return (
+      card.type === filterCriteria &&
+      card.name.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+  });
 
-  const totalFilteredPages = useMemo(() => {
-    return Math.ceil((filteredCards?.length || 0) / itemsPerPage);
-  }, [filteredCards]);
+  const totalFilteredPages = Math.ceil(
+    (filteredCards?.length || 0) / itemsPerPage
+  );
 
   const startIndex = (page - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
 
-  const cardsToDisplay = useMemo(() => {
-    return filteredCards?.slice(startIndex, endIndex) || [];
-  }, [filteredCards, startIndex, endIndex]);
+  const cardsToDisplay = filteredCards?.slice(startIndex, endIndex) || [];
 
   useEffect(() => {
     if (page < 1) {
@@ -50,6 +53,11 @@ export default function Tarot() {
     setPage(1);
   };
 
+  const handleSearch = (query: string) => {
+    setSearchQuery(query);
+    setPage(1);
+  };
+
   return (
     <div>
       <h2>Tarot Cards</h2>
@@ -64,6 +72,14 @@ export default function Tarot() {
           Minor Arcana
         </button>
       </div>
+
+      {/* Search input */}
+      <input
+        type="text"
+        placeholder="Search by name"
+        value={searchQuery}
+        onChange={(e) => handleSearch(e.target.value)}
+      />
 
       <div className="card__list">
         {cardsToDisplay.map((card) => (
