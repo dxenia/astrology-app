@@ -13,10 +13,9 @@ export default function Tarot() {
   const [searchQuery, setSearchQuery] = useState('');
   const itemsPerPage = 10;
 
-  const url = 'https://jps-tarot-api.azurewebsites.net/api/Tarot/Get';
+  const url = 'https://jps-tarot-api.azurewebsites.net/api/Tarot/GetShuffled';
   const { data: cards, loading, error } = useFetch<TarotProps[]>(url);
 
-  // Filter cards based on search query
   const filteredCards = cards?.filter((card) => {
     if (filterCriteria === 'All') {
       return card.name.toLowerCase().includes(searchQuery.toLowerCase());
