@@ -1,3 +1,9 @@
+.carousel-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .box {
   display: flex;
   gap: 1rem;
@@ -5,13 +11,14 @@
 }
 
 .box-ul {
-  width: 15rem;
+  width: 20rem;
   display: flex;
   flex-direction: row;
   overflow-x: hidden;
   gap: 1rem;
 }
 
-.box-ul li {
-  width: 100%;
+.box-ul li img {
+  width: 20rem;
+  height: 20rem;
 }
