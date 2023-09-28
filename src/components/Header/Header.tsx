@@ -84,7 +84,7 @@ export default function Header() {
               }
               onClick={closeMenu}
             >
-              Card Reading
+              Numerology
             </NavLink>
           </li>
         </ul>

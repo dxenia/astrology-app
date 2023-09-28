@@ -47,42 +47,34 @@ export default function Home() {
             <img src={moth} className="home__main--icon"></img>
             <Heading element="h4">Zodiac Signs</Heading>
             <p>
-              Embark on a celestial journey to explore the profound world of
-              Zodiac signs. Dive deep into the unique characteristics, traits,
-              and mysteries of each astrological sign. Discover how the
-              alignment of the stars at your birth shapes your personality and
-              influences your life's path. Our comprehensive resources and
-              insightful articles will guide you through the captivating realm
-              of astrology, helping you understand yourself and the people
-              around you like never before.
+              Dive into the cosmic mysteries of astrology on our website.
+              Explore your birth chart, discover the secrets of your sun, moon,
+              and rising signs, and gain insights into your life's path based on
+              the movements of celestial bodies. Unlock the power of the stars
+              and navigate your destiny with our expert astrologers.
             </p>
           </li>
           <li className="home__main--item">
             <img src={butterfly} className="home__main--icon"></img>
             <Heading element="h4">Tarot Cards</Heading>
             <p>
-              Unlock the ancient wisdom of Tarot cards and delve into the
-              intriguing art of divination. Explore the symbolism, meanings, and
-              interpretations of each Tarot card in our extensive library.
-              Whether you're a beginner or an experienced Tarot enthusiast, our
-              educational content and expert insights will deepen your
-              understanding of this mystical practice. Gain valuable insights
-              into your past, present, and future as you navigate the enchanting
-              world of Tarot cards.
+              Unveil the enigmatic world of tarot on our website. Experience the
+              art of divination through tarot card readings, learn the symbolism
+              behind each card, and receive guidance on love, career, and
+              spirituality. Our skilled tarot readers are here to help you
+              uncover the hidden wisdom within the cards.
             </p>
           </li>
           <li className="home__main--item">
             <img src={butterflyTwo} className="home__main--icon"></img>
-            <Heading element="h4">Card Reading</Heading>
+            <Heading element="h4">Numerology</Heading>
             <p>
-              Experience the magic of a personalized Tarot card reading right at
-              your fingertips. Connect with our skilled and intuitive readers
-              who will provide you with a one-of-a-kind Tarot card reading
-              session. Seek answers to your burning questions, gain clarity on
-              life's dilemmas, or simply receive guidance and inspiration. Our
-              readings are designed to empower you, offering profound insights
-              and a deeper connection to your spiritual journey. Let the Tarot
-              unveil the secrets of your destiny today.
+              Unlock the mystical significance of numbers with our numerology
+              resources. Explore the vibrations and energies associated with
+              your name and birthdate, delve into the secrets of numerological
+              calculations, and gain profound insights into your life's purpose.
+              Join us on a journey of self-discovery through the ancient wisdom
+              of numbers.
             </p>
           </li>
         </ul>
