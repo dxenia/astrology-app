@@ -78,9 +78,9 @@ export default function Header() {
           </li>
           <li className="nav__item">
             <NavLink
-              to="/reading"
+              to="/numerology"
               className={
-                location.pathname === '/reading' ? 'active' : 'nav__link'
+                location.pathname === '/numerology' ? 'active' : 'nav__link'
               }
               onClick={closeMenu}
             >
