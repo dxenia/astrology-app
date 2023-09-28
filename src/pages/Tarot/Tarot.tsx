@@ -4,6 +4,7 @@ import TarotCard from '../../components/TarotCard/TarotCard.tsx';
 import Loading from '../../components/Loading/Loading.tsx';
 import { TarotProps } from '../../types/TarotProps.ts';
 import { Pagination } from '../../components/Pagination/Pagination.tsx';
+import CardReading from '../../components/CardReading/CardReading.tsx';
 
 import '../Tarot/Tarot.css';
 
@@ -90,6 +91,7 @@ export default function Tarot() {
         totalPages={totalFilteredPages}
         handlePagination={setPage}
       />
+      <CardReading />
     </div>
   );
 }

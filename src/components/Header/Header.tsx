@@ -13,7 +13,7 @@ export default function Header() {
     setIsOpen(false);
   };
 
-  const openClose = isOpen ? 'open' : 'close';
+  const openClose = isOpen ? 'open' : '';
   const hamburger = isOpen ? 'line line-rotate' : 'line';
 
   return (

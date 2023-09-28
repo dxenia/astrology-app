@@ -10,7 +10,7 @@ import Tarot from './pages/Tarot/Tarot';
 import Zodiac from './pages/Zodiac/Zodiac';
 import ZodiacSignDetails from './pages/ZodiacSignDetails/ZodiacSignDetails';
 import NotFound from './pages/NotFound/NotFound';
-import CardReading from './pages/CardReading/CardReading';
+import Numerology from './pages/Numerology/Numerology';
 
 import './App.css';
 
@@ -36,7 +36,7 @@ function App() {
           <Route path="/zodiac" element={<Zodiac />} />
           <Route path="/zodiac/:id" element={<ZodiacSignDetails />} />
           <Route path="/tarot" element={<Tarot />} />
-          <Route path="/reading" element={<CardReading />} />
+          <Route path="/numerology" element={<Numerology />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
