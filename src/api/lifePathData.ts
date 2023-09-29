@@ -1,3 +1,5 @@
+// Credits to @themuuln on Github for the API data
+
 export const lifePathData = [
   {
     number: 1,

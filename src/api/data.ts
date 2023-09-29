@@ -1,3 +1,5 @@
+// Credits to @themuuln on Github for the API data
+
 export const soulUrgeLetters: { [key: string]: number } = {
   А: 1,
   И: 1,

@@ -1,5 +1,7 @@
 import { useState, useMemo } from 'react';
 import { expressionLetters, soulUrgeLetters } from '../../api/data';
+import { lifePathData } from '../../api/lifePathData';
+import { LifePathProps } from '../../types/LifePathProps';
 
 export default function Numerology() {
   const [dateOfBirth, setDateOfBirth] = useState<string>('');
@@ -84,6 +86,9 @@ export default function Numerology() {
     };
   }, []);
 
+  const items: LifePathProps[] = lifePathData;
+  const selectedItem = items.find((item) => item.number === lifePathNumber);
+
   return (
     <section className="dark:bg-[#09090b] dark:text-white text-black bg-slate-400">
       <div className="container flex flex-col items-center justify-center min-h-screen ">
@@ -130,6 +135,12 @@ export default function Numerology() {
           )}
           {soulUrgeNumber !== 0 && (
             <div>Your Soul Urge Number is: {soulUrgeNumber}</div>
+          )}
+          {selectedItem && (
+            <>
+              <h4>{selectedItem.title}</h4>
+              <p>{selectedItem.description}</p>
+            </>
           )}
         </div>
       </div>
