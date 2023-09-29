@@ -27,3 +27,7 @@
   width: 20rem;
   height: 20rem;
 }
+
+.box-ul li h3 {
+  text-align: center;
+}

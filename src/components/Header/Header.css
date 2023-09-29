@@ -72,7 +72,7 @@ nav,
     margin: 0.2rem auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: --var(--black-color);
+    background-color: var(--black-color);
   }
 
   .line-rotate:nth-child(1) {
