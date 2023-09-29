@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import { expressionLetters, soulUrgeLetters } from '../../api/data';
 import { lifePathData } from '../../api/lifePathData';
 import { LifePathProps } from '../../types/LifePathProps';
+import Carousel from '../../components/ImageCarousel/ImageCarousel';
 
 export default function Numerology() {
   const [dateOfBirth, setDateOfBirth] = useState<string>('');
@@ -9,6 +10,8 @@ export default function Numerology() {
   const [lifePathNumber, setLifePathNumber] = useState<number>(0);
   const [expressionNumber, setExpressionNumber] = useState<number>(0);
   const [soulUrgeNumber, setSoulUrgeNumber] = useState<number>(0);
+
+  const [showCarousel, setShowCarousel] = useState(false);
 
   const calculateLifePathNumber = (): void => {
     const cleanedDateOfBirth = dateOfBirth.replace(/\D/g, '');
@@ -26,6 +29,7 @@ export default function Numerology() {
 
     calculateExpressionNumber(fullName);
     calculateSoulUrgeNumber(fullName);
+    setShowCarousel(true);
   };
 
   const calculateExpressionNumber = useMemo(() => {
@@ -127,14 +131,12 @@ export default function Numerology() {
           <button onClick={calculateLifePathNumber}>Calculate</button>
         </div>
         <div>
-          {lifePathNumber !== 0 && (
-            <div>Your Life Path Number is: {lifePathNumber}</div>
-          )}
-          {expressionNumber !== 0 && (
-            <div>Your Expression Number is: {expressionNumber}</div>
-          )}
-          {soulUrgeNumber !== 0 && (
-            <div>Your Soul Urge Number is: {soulUrgeNumber}</div>
+          {showCarousel && (
+            <Carousel
+              lifePathNumber={lifePathNumber}
+              expressionNumber={expressionNumber}
+              soulUrgeNumber={soulUrgeNumber}
+            />
           )}
           {selectedItem && (
             <>
