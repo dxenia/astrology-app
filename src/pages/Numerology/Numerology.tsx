@@ -94,7 +94,7 @@ export default function Numerology() {
   const selectedItem = items.find((item) => item.number === lifePathNumber);
 
   return (
-    <section className="dark:bg-[#09090b] dark:text-white text-black bg-slate-400">
+    <section>
       <div className="container flex flex-col items-center justify-center min-h-screen ">
         <div>
           <h2>Numerology Calculator</h2>
