@@ -73,8 +73,7 @@ export default function Home() {
               resources. Explore the vibrations and energies associated with
               your name and birthdate, delve into the secrets of numerological
               calculations, and gain profound insights into your life's purpose.
-              Join us on a journey of self-discovery through the ancient wisdom
-              of numbers.
+              Join us on this journey of self-discovery.
             </p>
           </li>
         </ul>

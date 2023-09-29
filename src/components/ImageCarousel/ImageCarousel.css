@@ -10,6 +10,11 @@
   justify-content: flex-start;
 }
 
+.box button {
+  font-size: 1.5rem;
+  font-weight: var(--light-weight);
+}
+
 .box-ul {
   width: 20rem;
   display: flex;

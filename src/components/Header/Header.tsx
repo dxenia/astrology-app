@@ -73,7 +73,7 @@ export default function Header() {
               }
               onClick={closeMenu}
             >
-              Tarot Card Library
+              Tarots
             </NavLink>
           </li>
           <li className="nav__item">

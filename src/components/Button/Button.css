@@ -7,3 +7,12 @@ button {
   text-transform: uppercase;
   font-weight: var(--medium-weight);
 }
+
+button:hover {
+  color: var(--orange-color);
+  transition: 0.2s ease-in-out;
+}
+
+#dark button {
+  color: var(--white-color);
+}
