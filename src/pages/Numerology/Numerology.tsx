@@ -4,6 +4,8 @@ import { lifePathData } from '../../api/lifePathData';
 import { LifePathProps } from '../../types/LifePathProps';
 import Carousel from '../../components/ImageCarousel/ImageCarousel';
 
+import './Numerology.css';
+
 export default function Numerology() {
   const [dateOfBirth, setDateOfBirth] = useState<string>('');
   const [fullName, setFullName] = useState<string>('');
@@ -94,57 +96,47 @@ export default function Numerology() {
   const selectedItem = items.find((item) => item.number === lifePathNumber);
 
   return (
-    <section>
-      <div className="container flex flex-col items-center justify-center min-h-screen ">
-        <div>
-          <h1>Numerology Calculator</h1>
-          <span>Calculate your numerology one-click.</span>
+    <section className="numerology">
+      <h1>Numerology Calculator</h1>
+      <span>Calculate your numerology one-click.</span>
 
-          <div>
-            <form className="space-y-4">
-              <div className="grid items-center w-full gap-4">
-                <div className="flex flex-col space-y-1.5">
-                  <label htmlFor="name">Date of Birth:</label>
-                  <input
-                    value={dateOfBirth}
-                    onChange={(e) => setDateOfBirth(e.target.value)}
-                    id="name"
-                    placeholder="YYYY/MM/DD"
-                  />
-                </div>
-              </div>
-              <div className="grid items-center w-full gap-4">
-                <div className="flex flex-col space-y-1.5">
-                  <label htmlFor="name">Full Name:</label>
-                  <input
-                    value={fullName}
-                    onChange={(e) => setFullName(e.target.value)}
-                    id="name"
-                    type="text"
-                    placeholder="John Wick"
-                  />
-                </div>
-              </div>
-            </form>
-          </div>
+      <div>
+        <form>
+          <label htmlFor="name">Date of Birth:</label>
+          <input
+            value={dateOfBirth}
+            onChange={(e) => setDateOfBirth(e.target.value)}
+            id="name"
+            placeholder="YYYY/MM/DD"
+          />
 
-          <button onClick={calculateLifePathNumber}>Calculate</button>
-        </div>
-        <div>
-          {showCarousel && (
-            <Carousel
-              lifePathNumber={lifePathNumber}
-              expressionNumber={expressionNumber}
-              soulUrgeNumber={soulUrgeNumber}
-            />
-          )}
-          {selectedItem && (
-            <>
-              <h4>{selectedItem.title}</h4>
-              <p>{selectedItem.description}</p>
-            </>
-          )}
-        </div>
+          <label htmlFor="name">Full Name:</label>
+          <input
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
+            id="name"
+            type="text"
+            placeholder="John Wick"
+          />
+        </form>
+      </div>
+
+      <button onClick={calculateLifePathNumber}>Calculate</button>
+
+      <div>
+        {showCarousel && (
+          <Carousel
+            lifePathNumber={lifePathNumber}
+            expressionNumber={expressionNumber}
+            soulUrgeNumber={soulUrgeNumber}
+          />
+        )}
+        {selectedItem && (
+          <>
+            <h4>{selectedItem.title}</h4>
+            <p>{selectedItem.description}</p>
+          </>
+        )}
       </div>
     </section>
   );
