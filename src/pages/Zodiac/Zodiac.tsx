@@ -17,7 +17,7 @@ function Zodiac() {
   return (
     <>
       <div>
-        <h2>Astrology</h2>
+        <h1>Astrology</h1>
         {error && <div>{error?.message}</div>}
         {loading && <Loading />}
         <div className="astrology__list">

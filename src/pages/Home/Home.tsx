@@ -4,7 +4,6 @@ import butterfly from '../../assets/images/butterfly.png';
 import butterflyTwo from '../../assets/images/butterfly-2.png';
 import moth from '../../assets/images/moth.png';
 
-import Heading from '../../components/Heading/Heading';
 import Button from '../../components/Button/Button';
 
 import {
@@ -25,7 +24,7 @@ export default function Home() {
       <section className="home__intro">
         <div className="home__intro--info">
           <h1 className="home__central-heading">lunar☾</h1>
-          <h3 className="home__heading">Astrology in your pocket.</h3>
+          <h2 className="home__heading">Astrology in your pocket.</h2>
           <p className="home__intro--subheading">
             Welcome to the mystical world of Lunar, your gateway to unlocking
             the secrets of the cosmos and discovering the hidden truths that lie
@@ -41,11 +40,11 @@ export default function Home() {
         <img src={zodiacWheel} className="home__intro--img"></img>
       </section>
       <section className="home__main">
-        <h3 className="home__heading">What can you find on Lunar?</h3>
+        <h2 className="home__heading">What can you find on Lunar?</h2>
         <ul className="home__main--info">
           <li className="home__main--item">
             <img src={moth} className="home__main--icon"></img>
-            <Heading element="h4">Zodiac Signs</Heading>
+            <h3>Zodiac Signs</h3>
             <p>
               Dive into the cosmic mysteries of astrology on our website.
               Explore your birth chart, discover the secrets of your sun, moon,
@@ -56,7 +55,7 @@ export default function Home() {
           </li>
           <li className="home__main--item">
             <img src={butterfly} className="home__main--icon"></img>
-            <Heading element="h4">Tarot Cards</Heading>
+            <h3>Tarot Cards</h3>
             <p>
               Unveil the enigmatic world of tarot on our website. Experience the
               art of divination through tarot card readings, learn the symbolism
@@ -67,7 +66,7 @@ export default function Home() {
           </li>
           <li className="home__main--item">
             <img src={butterflyTwo} className="home__main--icon"></img>
-            <Heading element="h4">Numerology</Heading>
+            <h3>Numerology</h3>
             <p>
               Unlock the mystical significance of numbers with our numerology
               resources. Explore the vibrations and energies associated with
@@ -82,9 +81,7 @@ export default function Home() {
       <section className="form__section">
         <div className="form__wrapper">
           <article>
-            <Heading element="h3" className="form__info">
-              Curious about your zodiac sign?
-            </Heading>
+            <h3 className="form__info">Curious about your zodiac sign?</h3>
             <p>Sign up for our newsletter!</p>
           </article>
           <SubscribeForm onSubmit={handleSubmit} />

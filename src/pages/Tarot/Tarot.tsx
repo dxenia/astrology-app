@@ -61,7 +61,7 @@ export default function Tarot() {
 
   return (
     <div>
-      <h2>Tarot Cards</h2>
+      <h1>Tarot Cards</h1>
       {error && <div>{error?.message}</div>}
       {loading && <Loading />}
       <div className="filter-buttons">

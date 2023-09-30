@@ -27,11 +27,11 @@ function ZodiacSignDetails() {
         Back
       </button>
       <div>
-        <h2>{sign?.name}</h2>
+        <h1>{sign?.name}</h1>
         <img src={sign?.image} alt={sign?.name}></img>
         <span> | {sign?.dates}</span>
 
-        <h3>Ruler</h3>
+        <h2>Ruler</h2>
         <ul>
           <li>
             Celestial body: {sign?.ruler.type}, {sign?.ruler.name}
@@ -43,14 +43,14 @@ function ZodiacSignDetails() {
             {sign?.ruler.keywords?.join(', ')}.
           </li>
         </ul>
-        <h3>Modality</h3>
-        <h3>Traits</h3>
+        <h2>Modality</h2>
+        <h2>Traits</h2>
         <ul>
           <li>
-            <h4>Positive Traits</h4> {sign?.positiveTraits?.join(', ')}
+            <h3>Positive Traits</h3> {sign?.positiveTraits?.join(', ')}
           </li>
           <li>
-            <h4>Negative Traits</h4> {sign?.negativeTraits?.join(', ')}
+            <h3>Negative Traits</h3> {sign?.negativeTraits?.join(', ')}
           </li>
         </ul>
       </div>

@@ -4,7 +4,6 @@ import { TarotCardProps } from './TarotCard.types.ts';
 import './TarotCard.css';
 
 function TarotCard({ card }: TarotCardProps) {
-  
   return (
     <div className="flip-card">
       <div className="flip-card__inner">
@@ -12,7 +11,7 @@ function TarotCard({ card }: TarotCardProps) {
           <img src={card.image} className="flip-card__img" alt={card.name} />
         </div>
         <div className="flip-card__back">
-          <h3 className="flip-card__name">{card.name}</h3>
+          <h2 className="flip-card__name">{card.name}</h2>
           <p className="flip-card__info">Type: {card.type}</p>
           <p className="flip-card__info">Upright: {card.upright.join(', ')}</p>
           <p className="flip-card__info">

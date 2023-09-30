@@ -3,7 +3,7 @@ import './About.css';
 export default function About() {
   return (
     <div className="about">
-      <h2>About</h2>
+      <h1>About</h1>
       <p>
         Explore the stars, delve into the mysteries of astrology, and let the
         Tarot guide you on your spiritual journey. Whether you seek cosmic

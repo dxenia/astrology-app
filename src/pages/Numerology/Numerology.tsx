@@ -97,7 +97,7 @@ export default function Numerology() {
     <section>
       <div className="container flex flex-col items-center justify-center min-h-screen ">
         <div>
-          <h2>Numerology Calculator</h2>
+          <h1>Numerology Calculator</h1>
           <span>Calculate your numerology one-click.</span>
 
           <div>

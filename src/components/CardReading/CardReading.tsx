@@ -36,7 +36,7 @@ export default function CardReading() {
 
   return (
     <div>
-      <h2>Tarot Card Reading</h2>
+      <h1>Tarot Card Reading</h1>
       <p className="reading--description">
         The history of tarot card reading is marked by a blend of traditional
         playing card origins and the overlay of esoteric and mystical

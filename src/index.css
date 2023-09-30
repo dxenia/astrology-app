@@ -82,3 +82,21 @@ button:hover {
 ul {
   list-style-type: none;
 }
+
+h1 {
+  font-family: var(--title-font);
+  font-size: 5rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: var(--highlight-font);
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+h3 {
+  font-family: var(--body-font);
+  font-size: 1.7rem;
+  font-weight: var(--light-weight);
+}
