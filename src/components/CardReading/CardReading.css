@@ -1,13 +1,30 @@
 .reading--description {
-  display: block;
-  width: 50%;
+  width: 70%;
+  text-align: justify;
   margin: auto;
+  padding-bottom: 2rem;
 }
 
 .card__list--reading {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   margin: auto;
   gap: 1rem;
-  padding: 1rem;
+}
+
+.card__btn--reading {
+  display: block;
+  margin: 1rem auto;
+  border: 1px solid var(--black-color);
+}
+
+#dark .card__btn--reading {
+  border: 1px solid var(--white-color);
+}
+
+@media (min-width: 920px) {
+  .card__list--reading {
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+  }
 }

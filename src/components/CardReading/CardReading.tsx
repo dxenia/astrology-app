@@ -36,7 +36,7 @@ export default function CardReading() {
 
   return (
     <div>
-      <h1>Tarot Card Reading</h1>
+      <h1>Today's Reading</h1>
       <p className="reading--description">
         The history of tarot card reading is marked by a blend of traditional
         playing card origins and the overlay of esoteric and mystical
@@ -55,7 +55,9 @@ export default function CardReading() {
           ))}
         </div>
       )}
-      <button onClick={handleRerenderClick}>Generate a new reading</button>
+      <button onClick={handleRerenderClick} className="card__btn--reading">
+        Generate a new reading
+      </button>
     </div>
   );
 }

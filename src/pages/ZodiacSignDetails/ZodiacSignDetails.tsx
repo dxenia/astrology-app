@@ -23,14 +23,17 @@ function ZodiacSignDetails() {
       {error && <div>{error?.message}</div>}
       {loading && <Loading />}
 
-      <button className="card__details--back-btn" onClick={() => navigate(-1)}>
-        Back
-      </button>
       <div>
         <h1>{sign?.name}</h1>
         <img src={sign?.image} alt={sign?.name}></img>
         <span> | {sign?.dates}</span>
 
+        <button
+          className="card__details--back-btn"
+          onClick={() => navigate(-1)}
+        >
+          Go back to Zodiac Page
+        </button>
         <h2>Ruler</h2>
         <ul>
           <li>

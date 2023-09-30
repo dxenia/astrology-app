@@ -65,7 +65,7 @@ export default function Tarot() {
       {error && <div>{error?.message}</div>}
       {loading && <Loading />}
       <div className="filter-buttons">
-        <button onClick={() => handleFilterChange('All')}>All</button>
+        <button onClick={() => handleFilterChange('All')}>All cards</button>
         <button onClick={() => handleFilterChange('Major')}>
           Major Arcana
         </button>
@@ -77,9 +77,10 @@ export default function Tarot() {
       {/* Search input */}
       <input
         type="text"
-        placeholder="Search by name"
+        placeholder="Search by name 🔍"
         value={searchQuery}
         onChange={(e) => handleSearch(e.target.value)}
+        className="search-input"
       />
 
       <div className="card__list">
