@@ -86,10 +86,12 @@ export default function Home() {
       <section className="home__third-section">
         <div className="home__form-wrapper">
           <article>
-            <h3 className="home__heading--third-section">
+            <h2 className="home__heading--third-section">
               Curious about your zodiac sign?
-            </h3>
-            <p>Sign up for our newsletter!</p>
+            </h2>
+            <span className="home__sub-heading--third-section">
+              Sign up for our newsletter!
+            </span>
           </article>
           <SubscribeForm onSubmit={handleSubmit} />
         </div>

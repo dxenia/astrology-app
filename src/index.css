@@ -36,8 +36,9 @@
 
   /* font-size */
   --small-size: 1rem;
-  --regular-size: 0.8rem;
-  --large-size: 4rem;
+  --regular-size: 1.2rem;
+  --medium-size: 1.5rem;
+  --large-size: 5rem;
 }
 
 /* MEDIA QUERIES: small, medium, large screens */
@@ -46,15 +47,17 @@
   :root {
     --small-size: 0.5rem;
     --regular-size: 0.8rem;
-    --large-size: 4rem;
+    --medium-size: 1.5rem;
+    --large-size: 5rem;
   }
 }
 
 @media (min-width: 992px) {
   :root {
     --small-size: 0.8rem;
-    --regular-size: 0.8rem;
-    --large-size: 4rem;
+    --regular-size: 1rem;
+    --medium-size: 2rem;
+    --large-size: 5rem;
   }
 }
 
@@ -63,7 +66,7 @@
 body {
   font-family: var(--body-font);
   font-weight: var(--light-weight);
-  font-size: 0.9rem;
+  font-size: var(--regular-size);
   letter-spacing: 0.05rem;
   min-height: 100vh;
 }
@@ -85,14 +88,13 @@ ul {
 
 h1 {
   font-family: var(--title-font);
-  font-size: 5rem;
+  font-size: var(--large-size);
   text-align: center;
 }
 
 h2 {
   font-family: var(--highlight-font);
-  font-size: 1.5rem;
-  line-height: 1.5rem;
+  font-size: var(--medium-size);
 }
 
 h3 {

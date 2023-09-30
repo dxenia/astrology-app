@@ -58,8 +58,9 @@ export const SubscribeForm = ({ onSubmit }: FormProps) => {
           onChange={handleInputChange}
         />
       </label>
-      <hr />
-      <button type="submit">Submit form</button>
+      <button type="submit" className="subscribe-form__button">
+        Submit form
+      </button>
     </form>
   );
 };
