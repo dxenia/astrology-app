@@ -5,7 +5,6 @@ import butterflyTwo from '../../assets/images/butterfly-2.png';
 import moth from '../../assets/images/moth.png';
 
 import Button from '../../components/Button/Button';
-
 import {
   FormData,
   SubscribeForm,
@@ -20,12 +19,12 @@ export default function Home() {
   };
 
   return (
-    <div className="home__scroll">
-      <section className="home__intro">
-        <div className="home__intro--info">
-          <h1 className="home__central-heading">lunar☾</h1>
+    <div className="home">
+      <section className="home__first-section">
+        <div className="home__info">
+          <h1 className="home__logo">lunar☾</h1>
           <h2 className="home__heading">Astrology in your pocket.</h2>
-          <p className="home__intro--subheading">
+          <p className="home__subheading">
             Welcome to the mystical world of Lunar, your gateway to unlocking
             the secrets of the cosmos and discovering the hidden truths that lie
             within the Tarot cards.
@@ -34,16 +33,21 @@ export default function Home() {
             children="Learn More →"
             url={'/about'}
             target={'_self'}
-            className="home__intro--button"
+            className="home__button"
           />
         </div>
-        <img src={zodiacWheel} className="home__intro--img"></img>
+        <img
+          src={zodiacWheel}
+          className="home__img--first-section"
+          alt="Zodiac Wheel"
+        ></img>
       </section>
-      <section className="home__main">
-        <h2 className="home__heading">What can you find on Lunar?</h2>
-        <ul className="home__main--info">
-          <li className="home__main--item">
-            <img src={moth} className="home__main--icon"></img>
+
+      <section className="home__second-section">
+        <h2>What can you find on Lunar?</h2>
+        <ul className="home__list">
+          <li className="home__list-item">
+            <img src={moth} className="home__icon"></img>
             <h3>Zodiac Signs</h3>
             <p>
               Dive into the cosmic mysteries of astrology on our website.
@@ -53,8 +57,8 @@ export default function Home() {
               and navigate your destiny with our expert astrologers.
             </p>
           </li>
-          <li className="home__main--item">
-            <img src={butterfly} className="home__main--icon"></img>
+          <li className="home__list-item">
+            <img src={butterfly} className="home__icon"></img>
             <h3>Tarot Cards</h3>
             <p>
               Unveil the enigmatic world of tarot on our website. Experience the
@@ -64,8 +68,8 @@ export default function Home() {
               uncover the hidden wisdom within the cards.
             </p>
           </li>
-          <li className="home__main--item">
-            <img src={butterflyTwo} className="home__main--icon"></img>
+          <li className="home__list-item">
+            <img src={butterflyTwo} className="home__icon"></img>
             <h3>Numerology</h3>
             <p>
               Unlock the mystical significance of numbers with our numerology
@@ -76,12 +80,15 @@ export default function Home() {
             </p>
           </li>
         </ul>
-        <img src={moonPhases} className="home__main--img"></img>
+        <img src={moonPhases} className="home__img--second-section"></img>
       </section>
-      <section className="form__section">
-        <div className="form__wrapper">
+
+      <section className="home__third-section">
+        <div className="home__form-wrapper">
           <article>
-            <h3 className="form__info">Curious about your zodiac sign?</h3>
+            <h3 className="home__heading--third-section">
+              Curious about your zodiac sign?
+            </h3>
             <p>Sign up for our newsletter!</p>
           </article>
           <SubscribeForm onSubmit={handleSubmit} />
