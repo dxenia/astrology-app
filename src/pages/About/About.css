@@ -1,3 +1,9 @@
 .about {
   height: 110vh;
 }
+
+.about p {
+  width: 70%;
+  margin: auto;
+  text-align: justify;
+}

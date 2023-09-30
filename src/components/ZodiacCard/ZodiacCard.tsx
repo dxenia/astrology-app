@@ -9,7 +9,7 @@ function ZodiacCard({ sign }: ZodiacCardProps) {
     <Link to={`/zodiac/${sign.id}`} className="card__link">
       <div className="card__item">
         <h2>{sign.name}</h2>
-        <img src={sign.image} alt={sign.name} className="card__item--img" />
+        <img src={sign.image} alt={sign.name} className="card__img" />
         <span>Dates: {sign.dates}</span>
       </div>
     </Link>

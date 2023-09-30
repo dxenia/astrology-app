@@ -4,7 +4,7 @@
 
 .card__item {
   border: 1px solid #000000;
-  padding: 0.5rem;
+  padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.173) 0.5rem 0.5rem 0.5rem;
   display: flex;
   flex-direction: column;
@@ -13,6 +13,18 @@
   gap: 1rem;
 }
 
-.card__item--img {
-  height: 5rem;
+.card__img {
+  height: 8rem;
+}
+
+@media (min-width: 768px) {
+  .card__img {
+    height: 6rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .card__img {
+    height: 8rem;
+  }
 }
