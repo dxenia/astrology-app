@@ -1,4 +1,5 @@
 /* first section */
+
 .home__logo {
   font-size: var(--x-large-size);
 }
@@ -46,14 +47,8 @@
   );
 }
 
-/* @keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-} */
+/* 
+ */
 
 .home__button {
   margin: 1rem auto;

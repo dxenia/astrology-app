@@ -18,7 +18,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--light-grey-color);
+  background-color: var(--light-grey);
   transition: 0.4s;
   border-radius: 20px;
 }
@@ -30,13 +30,13 @@
   width: 16px;
   left: 2px;
   bottom: 2px;
-  background-color: var(--white-color);
+  background-color: var(--black);
   transition: 0.4s;
   border-radius: 50%;
 }
 
 input:checked + .toggle__slider {
-  background-color: var(--dark-grey-color);
+  background-color: var(--dark-grey);
 }
 
 input:checked + .toggle__slider:before {

@@ -1,5 +1,5 @@
 header {
-  background-color: #ffffffbb;
+  background-color: var(--primary-background);
   backdrop-filter: blur(5px);
   position: sticky;
   position: -webkit-sticky;
@@ -72,7 +72,7 @@ nav,
     margin: 0.2rem auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: var(--black-color);
+    background-color: var(--primary-foreground);
   }
 
   .line-rotate:nth-child(1) {
@@ -169,9 +169,9 @@ nav,
 }
 
 #dark nav .nav__list.open {
-  background-color: var(--black-color);
+  background-color: var(--black);
 }
 
 #dark .line {
-  background-color: var(--white-color);
+  background-color: var(--white);
 }

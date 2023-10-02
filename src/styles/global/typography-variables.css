@@ -3,12 +3,12 @@
 
 @font-face {
   font-family: 'Redro';
-  src: url('./assets/fonts/Redro.ttf') format('truetype');
+  src: url('../../assets/fonts/Redro.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Akira';
-  src: url('./assets/fonts/Akira.ttf') format('truetype');
+  src: url('../../assets/fonts/Akira.ttf') format('truetype');
 }
 
 /*------------ VARIABLES ------------*/

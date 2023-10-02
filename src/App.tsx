@@ -28,19 +28,17 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div id={theme}>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/zodiac" element={<Zodiac />} />
-          <Route path="/zodiac/:id" element={<ZodiacSignDetails />} />
-          <Route path="/tarot" element={<Tarot />} />
-          <Route path="/numerology" element={<Numerology />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <Footer />
-      </div>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/zodiac" element={<Zodiac />} />
+        <Route path="/zodiac/:id" element={<ZodiacSignDetails />} />
+        <Route path="/tarot" element={<Tarot />} />
+        <Route path="/numerology" element={<Numerology />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Footer />
     </ThemeContext.Provider>
   );
 }
