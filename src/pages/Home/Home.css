@@ -46,14 +46,14 @@
   );
 }
 
-@keyframes rotation {
+/* @keyframes rotation {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(359deg);
   }
-}
+} */
 
 .home__button {
   margin: 1rem auto;
@@ -104,7 +104,7 @@
   animation: skew-y-shaking 0.3s infinite;
 }
 
-@keyframes skew-y-shaking {
+/* @keyframes skew-y-shaking {
   0% {
     transform: translate(0, 0) rotate(0deg);
   }
@@ -120,7 +120,7 @@
   100% {
     transform: translate(0, 0) rotate(0deg);
   }
-}
+} */
 
 /* subscribe form */
 
