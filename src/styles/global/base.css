@@ -1,0 +1,39 @@
+body {
+  font-family: var(--body-font);
+  font-weight: var(--light-weight);
+  font-size: var(--regular-size);
+  letter-spacing: 0.05rem;
+  min-height: 100vh;
+}
+
+a {
+  font-weight: var(--bold-weight);
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: var(--title-font);
+  font-size: var(--large-size);
+  text-align: center;
+}
+
+h2 {
+  font-family: var(--highlight-font);
+  font-size: var(--medium-size);
+}
+
+h3 {
+  font-family: var(--body-font);
+  font-size: 1.7rem;
+  font-weight: var(--light-weight);
+}

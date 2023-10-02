@@ -1,0 +1,76 @@
+/*------------ FONT IMPORTS ------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+@font-face {
+  font-family: 'Redro';
+  src: url('./assets/fonts/Redro.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Akira';
+  src: url('./assets/fonts/Akira.ttf') format('truetype');
+}
+
+/*------------ VARIABLES ------------*/
+
+:root {
+  /* font-weight */
+  --light-weight: 300;
+  --regular-weight: 400;
+  --medium-weight: 500;
+  --bold-weight: 600;
+
+  /* font-family */
+  --body-font: 'Inter', sans-serif;
+  --title-font: 'Redro';
+  --highlight-font: 'Akira';
+
+  /* font-size */
+  --small-size: 1rem;
+  --regular-size: 1.2rem;
+  --medium-size: 1.5rem;
+  --large-size: 4rem;
+  --x-large-size: 6rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+  :root {
+    --small-size: 0.5rem;
+    --regular-size: 0.8rem;
+    --medium-size: 1.5rem;
+    --large-size: 5rem;
+    --x-large-size: 8rem;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --small-size: 0.8rem;
+    --regular-size: 1rem;
+    --medium-size: 1.5rem;
+    --large-size: 5rem;
+    --x-large-size: 9rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --small-size: 0.8rem;
+    --regular-size: 1rem;
+    --medium-size: 1.5rem;
+    --large-size: 5rem;
+    --x-large-size: 9rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  :root {
+    --small-size: 0.8rem;
+    --regular-size: 1rem;
+    --medium-size: 1.5rem;
+    --large-size: 5rem;
+    --x-large-size: 9rem;
+  }
+}

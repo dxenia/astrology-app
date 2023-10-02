@@ -1,0 +1,26 @@
+:root {
+  --black: rgb(0, 0, 0);
+  --dark-grey: rgb(83, 83, 83);
+  --light-grey: rgb(206, 206, 206);
+  --white: rgb(255, 255, 255);
+  --orange: rgb(255, 165, 0);
+  --purple: rgb(136, 0, 255);
+}
+
+html[data-theme='dark'] {
+  --primary-foreground: var(--white);
+  --secondary-foreground: var(--light-grey);
+  --tertiary-foreground: var(--purple);
+  --primary-background: var(--black);
+  --secondary-background: var(--purple);
+  --tertiary-background: var(--white);
+}
+
+html[data-theme='light'] {
+  --primary-foreground: var(--black);
+  --secondary-foreground: var(--dark-grey);
+  --tertiary-foreground: var(--orange);
+  --primary-background: var(--white);
+  --secondary-background: var(--orange);
+  --tertiary-background: var(--black);
+}
