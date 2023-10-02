@@ -1,1 +1,11 @@
 @import url('./resets/normalize.css');
+
+@import './global/animation-variables.css';
+@import './global/base.css';
+@import './global/color-variables.css';
+@import './global/space-variables.css';
+@import './global/typography-variables.css';
+
+@import './utilities/animation-utilities.css';
+@import './utilities/layout-utilities.css';
+@import './utilities/typography-utilities.css';
