@@ -1,5 +1,5 @@
 /*------------ FONT IMPORTS & RESET ------------*/
-@import url('./normalize.css');
+@import url('./resets/normalize.css');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
 
 @font-face {
@@ -38,7 +38,8 @@
   --small-size: 1rem;
   --regular-size: 1.2rem;
   --medium-size: 1.5rem;
-  --large-size: 5rem;
+  --large-size: 4rem;
+  --x-large-size: 6rem;
 }
 
 /* MEDIA QUERIES: small, medium, large screens */
@@ -49,6 +50,7 @@
     --regular-size: 0.8rem;
     --medium-size: 1.5rem;
     --large-size: 5rem;
+    --x-large-size: 8rem;
   }
 }
 
@@ -58,6 +60,7 @@
     --regular-size: 1rem;
     --medium-size: 1.5rem;
     --large-size: 5rem;
+    --x-large-size: 9rem;
   }
 }
 

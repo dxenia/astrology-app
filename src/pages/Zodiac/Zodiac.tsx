@@ -1,5 +1,5 @@
 import './Zodiac.css';
-import useFetch from '../../hooks/useFetch.tsx';
+import useFetch from '../../hooks/useFetch';
 import { ZodiacProps } from '../../types/ZodiacProps.ts';
 import ZodiacCard from '../../components/ZodiacCard/ZodiacCard.tsx';
 import Loading from '../../components/Loading/Loading.tsx';

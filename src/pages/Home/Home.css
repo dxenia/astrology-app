@@ -1,6 +1,6 @@
 /* first section */
 .home__logo {
-  font-size: 6rem;
+  font-size: var(--x-large-size);
 }
 
 .home__first-section {

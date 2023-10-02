@@ -3,9 +3,10 @@
 }
 
 .card__item {
+  background-color: var(--white-color);
   border: 1px solid #000000;
   padding: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.173) 0.5rem 0.5rem 0.5rem;
+  box-shadow: rgb(0, 0, 0) 0.5rem 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

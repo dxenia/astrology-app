@@ -1,9 +1,11 @@
-import './CardReading.css';
+import { useEffect, useState } from 'react';
+
 import useFetch from '../../hooks/useFetch';
-import { TarotProps } from '../../types/TarotProps';
 import Loading from '../../components/Loading/Loading';
 import TarotCard from '../../components/TarotCard/TarotCard';
-import { useEffect, useState } from 'react';
+import { TarotProps } from '../../types/TarotProps';
+
+import './CardReading.css';
 
 export default function CardReading() {
   const url = 'https://jps-tarot-api.azurewebsites.net/api/Tarot/Get';

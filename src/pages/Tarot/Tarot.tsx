@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useCallback } from 'react';
-import useFetch from '../../hooks/useFetch.tsx';
+import useFetch from '../../hooks/useFetch';
 import TarotCard from '../../components/TarotCard/TarotCard.tsx';
 import Loading from '../../components/Loading/Loading.tsx';
 import { TarotProps } from '../../types/TarotProps.ts';

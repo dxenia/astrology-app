@@ -1,4 +1,4 @@
-import useFetch from '../../hooks/useFetch.tsx';
+import useFetch from '../../hooks/useFetch';
 import { ZodiacProps } from '../../types/ZodiacProps.ts';
 import { useParams, useNavigate } from 'react-router-dom';
 import Loading from '../../components/Loading/Loading.tsx';
@@ -34,7 +34,6 @@ function ZodiacSignDetails() {
         >
           Go back to Zodiac Page
         </button>
-        <h2>Ruler</h2>
         <ul>
           <li>
             Celestial body: {sign?.ruler.type}, {sign?.ruler.name}
@@ -46,8 +45,6 @@ function ZodiacSignDetails() {
             {sign?.ruler.keywords?.join(', ')}.
           </li>
         </ul>
-        <h2>Modality</h2>
-        <h2>Traits</h2>
         <ul>
           <li>
             <h3>Positive Traits</h3> {sign?.positiveTraits?.join(', ')}
