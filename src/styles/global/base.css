@@ -1,14 +1,18 @@
+html {
+  background-color: var(--primary-background);
+}
+
 body {
   font-family: var(--body-font);
   font-weight: var(--light-weight);
   font-size: var(--regular-size);
-  letter-spacing: 0.05rem;
-  min-height: 100vh;
+  color: var(--primary-foreground);
+  letter-spacing: var(--space-10);
 }
 
 a {
   font-weight: var(--bold-weight);
-  letter-spacing: 0.1rem;
+  letter-spacing: var(--space-25);
   text-decoration: none;
 }
 
@@ -34,6 +38,6 @@ h2 {
 
 h3 {
   font-family: var(--body-font);
-  font-size: 1.7rem;
+  font-size: var(--medium-size);
   font-weight: var(--light-weight);
 }

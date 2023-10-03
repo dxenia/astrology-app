@@ -9,27 +9,22 @@ export default function Header() {
 
   const location = useLocation();
 
-  // const closeMenu = () => {
-  //   setIsOpen(false);
-  // };
+  const closeMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   const openClose = isOpen ? 'open' : 'close';
-  const hamburger = isOpen ? 'line line-rotate' : 'line';
+  const hamburger = `line ${isOpen ? 'line-rotate' : ''}`;
 
   return (
     <header>
-      <nav className={`nav`}>
+      <nav className={`nav ${openClose}`}>
         <div className="nav__options">
           <NavLink className="logo" to="/">
             lunar
           </NavLink>
           <ThemeToggle />
-          <div
-            className={`menu ${openClose}`}
-            onClick={() => {
-              setIsOpen(!isOpen);
-            }}
-          >
+          <div className="menu" onClick={closeMenu}>
             <span className={hamburger}></span>
             <span className={hamburger}></span>
             <span className={hamburger}></span>
@@ -40,7 +35,7 @@ export default function Header() {
             <NavLink
               to="/"
               className={location.pathname === '/' ? 'active' : 'nav__link'}
-              // onClick={closeMenu}
+              onClick={closeMenu}
             >
               Home
             </NavLink>
@@ -51,7 +46,7 @@ export default function Header() {
               className={
                 location.pathname === '/about' ? 'active' : 'nav__link'
               }
-              // onClick={closeMenu}
+              onClick={closeMenu}
             >
               About
             </NavLink>
@@ -60,7 +55,7 @@ export default function Header() {
             <NavLink
               to="/zodiac"
               className={location.pathname === '/' ? 'active' : 'nav__link'}
-              // onClick={closeMenu}
+              onClick={closeMenu}
             >
               Zodiac Signs
             </NavLink>
@@ -71,7 +66,7 @@ export default function Header() {
               className={
                 location.pathname === '/about' ? 'active' : 'nav__link'
               }
-              // onClick={closeMenu}
+              onClick={closeMenu}
             >
               Tarots
             </NavLink>
@@ -82,7 +77,7 @@ export default function Header() {
               className={
                 location.pathname === '/numerology' ? 'active' : 'nav__link'
               }
-              // onClick={closeMenu}
+              onClick={closeMenu}
             >
               Numerology
             </NavLink>

@@ -1,15 +1,17 @@
 :root {
   --black: rgb(0, 0, 0);
+  --black-sheer: rgba(0, 0, 0, 0.7);
   --dark-grey: rgb(83, 83, 83);
   --light-grey: rgb(206, 206, 206);
   --white: rgb(255, 255, 255);
+  --white-sheer: rgba(255, 255, 255, 0.7);
   --orange: rgb(255, 165, 0);
   --purple: rgb(136, 0, 255);
 }
 
 html[data-theme='dark'] {
-  --primary-foreground: var(--white);
-  --secondary-foreground: var(--light-grey);
+  --primary-foreground: var(--white-sheer);
+  --secondary-foreground: var(--white);
   --tertiary-foreground: var(--purple);
   --primary-background: var(--black);
   --secondary-background: var(--purple);

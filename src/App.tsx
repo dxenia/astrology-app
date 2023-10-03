@@ -26,6 +26,8 @@ function App() {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
 
+  document.documentElement.setAttribute('data-theme', theme);
+
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <Header />

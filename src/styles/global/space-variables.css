@@ -1,4 +1,5 @@
 :root {
+  --space-10: 0.05rem; /* 0.8px */
   --space-25: 0.125rem; /* 2px */
   --space-50: 0.25rem; /* 4px */
   --space-75: 0.5rem; /* 8px */

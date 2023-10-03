@@ -1,5 +1,5 @@
 header {
-  background-color: var(--primary-background);
+  background-color: var(--white);
   backdrop-filter: blur(5px);
   position: sticky;
   position: -webkit-sticky;
@@ -102,6 +102,7 @@ nav,
   nav {
     flex-direction: column;
     align-items: center;
+    transition: left 0.3s ease-in-out;
   }
 
   .logo {
@@ -109,69 +110,23 @@ nav,
   }
 
   .nav__list {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  nav .nav__list.open {
     display: flex;
+    flex-direction: column;
     align-items: flex-end;
-    margin-top: 1.5rem;
-    padding-top: 2rem;
+    background-color: var(--primary-background);
+    width: 100%;
+    padding-top: 1rem;
     padding-bottom: 100vh;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    animation-name: slide-in;
-    animation-duration: 0.5s;
+    gap: 2rem;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(-200%);
   }
 
-  nav .nav__list.close {
-    width: 100%;
-    animation-name: slide-out;
-    animation-duration: 1s;
-  }
-
-  @keyframes slide-in {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-
-  @keyframes slide-out {
-    0% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    100% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
+  .nav__list.open {
+    transform: translateX(0);
   }
 
   .nav__item {
     padding-right: 1rem;
   }
-}
-
-#dark header {
-  background-color: #000000c0;
-}
-
-#dark .nav__item a,
-#dark .logo {
-  color: #ffffff;
-}
-
-#dark nav .nav__list.open {
-  background-color: var(--black);
-}
-
-#dark .line {
-  background-color: var(--white);
 }
