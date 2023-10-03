@@ -7,6 +7,8 @@ import './Header.css';
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const location = useLocation();
+
   const closeMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -16,7 +18,7 @@ export default function Header() {
 
   return (
     <header>
-      <nav className={`nav ${openClose}`}>
+      <nav className={`nav ${isOpen ? 'open' : ''}`}>
         <div className="nav__options">
           <NavLink className="logo" to="/">
             lunar
@@ -30,29 +32,53 @@ export default function Header() {
         </div>
         <ul className={`nav__list ${openClose}`}>
           <li className="nav__item">
-            <NavLink to="/" activeClassName="active" onClick={closeMenu}>
+            <NavLink
+              to="/"
+              className={location.pathname === '/' ? 'active' : 'nav__link'}
+              onClick={closeMenu}
+            >
               Home
             </NavLink>
           </li>
           <li className="nav__item">
-            <NavLink to="/about" activeClassName="active" onClick={closeMenu}>
+            <NavLink
+              to="/about"
+              className={
+                location.pathname === '/about' ? 'active' : 'nav__link'
+              }
+              onClick={closeMenu}
+            >
               About
             </NavLink>
           </li>
           <li className="nav__item">
-            <NavLink to="/zodiac" activeClassName="active" onClick={closeMenu}>
+            <NavLink
+              to="/zodiac"
+              className={
+                location.pathname === '/zodiac' ? 'active' : 'nav__link'
+              }
+              onClick={closeMenu}
+            >
               Zodiac Signs
             </NavLink>
           </li>
           <li className="nav__item">
-            <NavLink to="/tarot" activeClassName="active" onClick={closeMenu}>
+            <NavLink
+              to="/tarot"
+              className={
+                location.pathname === '/tarot' ? 'active' : 'nav__link'
+              }
+              onClick={closeMenu}
+            >
               Tarots
             </NavLink>
           </li>
           <li className="nav__item">
             <NavLink
               to="/numerology"
-              activeClassName="active"
+              className={
+                location.pathname === '/numerology' ? 'active' : 'nav__link'
+              }
               onClick={closeMenu}
             >
               Numerology
