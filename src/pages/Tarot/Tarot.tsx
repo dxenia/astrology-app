@@ -37,10 +37,18 @@ export default function Tarot() {
 
   const cardsToDisplay = filteredCards?.slice(startIndex, endIndex) || [];
 
+  // useEffect(() => {
+  //   if (page < 1) {
+  //     setPage(1);
+  //   } else if (page > totalFilteredPages) {
+  //     setPage(totalFilteredPages);
+  //   }
+  // }, [page, totalFilteredPages]);
+
   useEffect(() => {
     if (page < 1) {
       setPage(1);
-    } else if (page > totalFilteredPages) {
+    } else if (totalFilteredPages && page > totalFilteredPages) {
       setPage(totalFilteredPages);
     }
   }, [page, totalFilteredPages]);

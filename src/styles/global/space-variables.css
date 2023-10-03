@@ -1,17 +1,13 @@
 :root {
-  --space-10: 0.05rem; /* 0.8px */
-  --space-25: 0.125rem; /* 2px */
-  --space-50: 0.25rem; /* 4px */
-  --space-75: 0.5rem; /* 8px */
-  --space-100: 0.75rem; /* 12px */
-  --space-125: 1rem; /* 16px */
-  --space-150: 1.125rem; /* 18px */
-  --space-200: 1.5rem; /* 24px */
-  --space-250: 1.875rem; /* 30px */
-  --space-300: 2.25rem; /* 36px */
-  --space-400: 3rem; /* 48px */
-  --space-500: 3.75rem; /* 60px */
-  --space-750: 5.625rem; /* 90px */
-  --space-1000: 7.5rem; /* 120px */
-  --space-1350: 10.125rem; /* 162px */
+  --space-007: 0.07rem;
+  --space-02: 0.2rem;
+  --space-03: 0.3rem;
+  --space-04: 0.4rem;
+  --space-05: 0.5rem;
+  --space-10: 1rem;
+  --space-15: 1.5rem;
+  --space-20: 2rem;
+  --space-25: 25rem;
+  --space-30: 3rem;
+  --space-40: 4rem;
 }

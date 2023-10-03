@@ -7,12 +7,12 @@ body {
   font-weight: var(--light-weight);
   font-size: var(--regular-size);
   color: var(--primary-foreground);
-  letter-spacing: var(--space-10);
+  letter-spacing: var(--space-007);
 }
 
 a {
   font-weight: var(--bold-weight);
-  letter-spacing: var(--space-25);
+  letter-spacing: var(--space-02);
   text-decoration: none;
 }
 

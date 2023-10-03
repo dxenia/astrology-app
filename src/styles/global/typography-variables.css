@@ -28,7 +28,7 @@
   /* font-size */
   --small-size: 1rem;
   --regular-size: 1.2rem;
-  --medium-size: 1.5rem;
+  --medium-size: 1.7rem;
   --large-size: 4rem;
   --x-large-size: 6rem;
 }
@@ -37,7 +37,7 @@
 
 @media (min-width: 768px) {
   :root {
-    --small-size: 0.5rem;
+    --small-size: 0.6rem;
     --regular-size: 0.8rem;
     --medium-size: 1.5rem;
     --large-size: 5rem;

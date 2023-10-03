@@ -1,5 +1,9 @@
 :root {
+  --duration-instant: 0ms;
   --duration-fast: 50ms;
+  --duration-quick: 100ms;
   --duration-standard: 150ms;
   --duration-slow: 250ms;
+  --duration-slower: 300ms;
+  --duration-slowest: 600ms;
 }

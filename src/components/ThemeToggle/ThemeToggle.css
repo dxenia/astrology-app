@@ -50,3 +50,9 @@ input:checked + .toggle__slider:before {
 .toggle__slider.round:before {
   border-radius: 50%;
 }
+
+@media (max-width: 767px) {
+  .toggle__switch {
+    margin-bottom: 14px;
+  }
+}
