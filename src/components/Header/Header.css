@@ -137,7 +137,6 @@ nav,
 
   .nav__list.open {
     transform: translateX(0);
-    backdrop-filter: blur(5px); /* Add backdrop filter here */
   }
 
   .nav__item {

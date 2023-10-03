@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
+
 import './Header.css';
 
 export default function Header() {
@@ -18,7 +19,7 @@ export default function Header() {
 
   return (
     <header>
-      <nav className={`nav ${isOpen ? 'open' : ''}`}>
+      <nav className={'nav'}>
         <div className="nav__options">
           <NavLink className="logo" to="/">
             lunar

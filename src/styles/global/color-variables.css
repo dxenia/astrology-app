@@ -12,16 +12,16 @@
 html[data-theme='dark'] {
   --primary-foreground: var(--white-sheer);
   --secondary-foreground: var(--white);
-  --tertiary-foreground: var(--purple);
+  --tertiary-foreground: var(--white-sheer);
   --primary-background: var(--black);
   --secondary-background: var(--black-sheer);
-  --tertiary-background: var(--white);
+  --tertiary-background: var(--black);
 }
 
 html[data-theme='light'] {
   --primary-foreground: var(--black);
   --secondary-foreground: var(--dark-grey);
-  --tertiary-foreground: var(--orange);
+  --tertiary-foreground: var(--white);
   --primary-background: var(--white);
   --secondary-background: var(--white-sheer);
   --tertiary-background: var(--black);
