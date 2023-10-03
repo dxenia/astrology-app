@@ -43,7 +43,7 @@ export default function Tarot() {
     } else if (page > totalFilteredPages) {
       setPage(totalFilteredPages);
     }
-  }, [page, totalFilteredPages, loading, error]);
+  }, [page, totalFilteredPages]);
 
   if (error) {
     console.log(`Error: ${error.message}`);

@@ -10,6 +10,11 @@ header {
   z-index: 99999;
 }
 
+.active:not(.logo) {
+  background-color: var(--primary-foreground);
+  color: var(--primary-background);
+}
+
 .nav__options {
   display: flex;
   flex-direction: row;

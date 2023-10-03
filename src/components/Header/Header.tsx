@@ -7,8 +7,6 @@ import './Header.css';
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const location = useLocation();
-
   const closeMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -32,51 +30,29 @@ export default function Header() {
         </div>
         <ul className={`nav__list ${openClose}`}>
           <li className="nav__item">
-            <NavLink
-              to="/"
-              className={location.pathname === '/' ? 'active' : 'nav__link'}
-              onClick={closeMenu}
-            >
+            <NavLink to="/" activeClassName="active" onClick={closeMenu}>
               Home
             </NavLink>
           </li>
           <li className="nav__item">
-            <NavLink
-              to="/about"
-              className={
-                location.pathname === '/about' ? 'active' : 'nav__link'
-              }
-              onClick={closeMenu}
-            >
+            <NavLink to="/about" activeClassName="active" onClick={closeMenu}>
               About
             </NavLink>
           </li>
           <li className="nav__item">
-            <NavLink
-              to="/zodiac"
-              className={location.pathname === '/' ? 'active' : 'nav__link'}
-              onClick={closeMenu}
-            >
+            <NavLink to="/zodiac" activeClassName="active" onClick={closeMenu}>
               Zodiac Signs
             </NavLink>
           </li>
           <li className="nav__item">
-            <NavLink
-              to="/tarot"
-              className={
-                location.pathname === '/about' ? 'active' : 'nav__link'
-              }
-              onClick={closeMenu}
-            >
+            <NavLink to="/tarot" activeClassName="active" onClick={closeMenu}>
               Tarots
             </NavLink>
           </li>
           <li className="nav__item">
             <NavLink
               to="/numerology"
-              className={
-                location.pathname === '/numerology' ? 'active' : 'nav__link'
-              }
+              activeClassName="active"
               onClick={closeMenu}
             >
               Numerology
