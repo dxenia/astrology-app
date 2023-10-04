@@ -41,8 +41,27 @@
   color: var(--primary-foreground);
 }
 
+.info--numerology {
+  padding-top: var(--space-20);
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+
+.info--numerology h3 {
+  padding-bottom: var(--space-10);
+  text-align: left;
+}
+
 @media (min-width: 768px) {
   .numerology__paragraph {
+    width: 50%;
+  }
+
+  .info--numerology {
     width: 50%;
   }
 }

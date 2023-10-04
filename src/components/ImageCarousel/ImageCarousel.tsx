@@ -30,6 +30,9 @@ export default function Carousel({
 
   return (
     <div className="carousel">
+      <span>
+        Your results are ready. Press the buttons below to discover them:
+      </span>
       <nav className="box__buttons">
         {/* NOTE: OnClickButton component is not used below to improve UX */}
         <button onClick={() => scrollToIndex(0)}>Life Path Number</button>

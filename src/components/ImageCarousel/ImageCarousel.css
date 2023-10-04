@@ -1,8 +1,16 @@
 .carousel {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-  border: 2px solid var(--primary-foreground);
+  margin-top: var(--space-30);
+}
+
+.carousel span {
+  display: block;
+  text-align: center;
+  font-weight: var(--bold-weight);
+  padding: var(--space-10);
 }
 
 .box__buttons {
@@ -12,7 +20,8 @@
 }
 
 .box__buttons button {
-  margin: 1rem;
+  margin: var(--space-03);
+  font-size: var(--small-size);
   border: 2px solid var(--primary-foreground);
   color: var(--primary-foreground);
   background-color: var(--primary-background);
@@ -30,14 +39,15 @@
 .box__ul {
   width: 20rem;
   display: flex;
+  justify-items: center;
   flex-direction: row;
   overflow-x: hidden;
   gap: 1rem;
 }
 
 .box__ul li img {
-  width: 5rem;
-  height: 5rem;
+  width: 20rem;
+  height: 20rem;
 }
 
 .box-ul li span {
