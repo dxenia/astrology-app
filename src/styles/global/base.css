@@ -23,6 +23,7 @@ button {
 a:hover,
 button:hover {
   cursor: pointer;
+  transition: ease-in-out var(--duration-slow);
 }
 
 ul {

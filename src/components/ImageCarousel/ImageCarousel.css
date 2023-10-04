@@ -1,21 +1,33 @@
-.carousel-container {
+.carousel {
   display: flex;
   align-items: center;
   flex-direction: column;
+  border: 2px solid var(--primary-foreground);
 }
 
-.box {
+.box__buttons {
   display: flex;
-  gap: 1rem;
   justify-content: flex-start;
   margin: 1rem;
 }
 
-.box button {
+.box__buttons button {
   margin: 1rem;
+  border: 2px solid var(--primary-foreground);
+  color: var(--primary-foreground);
+  background-color: var(--primary-background);
 }
 
-.box-ul {
+.box__buttons button:hover {
+  background: var(--primary-background);
+  background: radial-gradient(
+    circle,
+    var(--quaternary-background) 0%,
+    var(--primary-background) 70%
+  );
+}
+
+.box__ul {
   width: 20rem;
   display: flex;
   flex-direction: row;
@@ -23,9 +35,9 @@
   gap: 1rem;
 }
 
-.box-ul li img {
-  width: 20rem;
-  height: 20rem;
+.box__ul li img {
+  width: 5rem;
+  height: 5rem;
 }
 
 .box-ul li span {

@@ -115,7 +115,6 @@ nav,
   nav {
     flex-direction: column;
     align-items: center;
-    transition: left var(--duration-slow) ease-in-out;
   }
 
   .logo {
@@ -123,20 +122,32 @@ nav,
   }
 
   .nav__list {
+    opacity: 0;
+    visibility: hidden;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-end;
     width: 100vw;
     padding-top: var(--space-10);
-    padding-bottom: 100vh;
+    height: 100vh;
     gap: var(--space-20);
-    transition: transform var(--duration-slowest) ease-in-out;
-    transform: translateX(-200%);
     background-color: var(--primary-background);
+    transform: translateX(-200%);
+    transition: transform var(--duration-slowest) ease-in-out,
+      opacity var(--duration-slowest) ease-in-out,
+      visibility var(--duration-slowest) ease-in-out;
   }
 
   .nav__list.open {
+    opacity: 1;
+    visibility: visible;
     transform: translateX(0);
+  }
+
+  .nav__list.close {
+    margin-top: 81px;
+    position: absolute;
   }
 
   .nav__item {

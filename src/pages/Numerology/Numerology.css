@@ -5,6 +5,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 20%;
 }
 
 /* .glow {
@@ -44,4 +45,13 @@
   .numerology__paragraph {
     width: 50%;
   }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
 }

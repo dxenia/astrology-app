@@ -29,32 +29,18 @@ export default function Carousel({
   }
 
   return (
-    <div className="carousel-container">
-      <nav className="box">
-        <button
-          className="button-shadow shadow"
-          onClick={() => scrollToIndex(0)}
-        >
-          Life Path Number
-        </button>
-        <button
-          className="button-shadow shadow"
-          onClick={() => scrollToIndex(1)}
-        >
-          Expression Number
-        </button>
-        <button
-          className="button-shadow shadow"
-          onClick={() => scrollToIndex(2)}
-        >
-          Soul Urge Number
-        </button>
+    <div className="carousel">
+      <nav className="box__buttons">
+        {/* NOTE: OnClickButton component is not used below to improve UX */}
+        <button onClick={() => scrollToIndex(0)}>Life Path Number</button>
+        <button onClick={() => scrollToIndex(1)}>Expression Number</button>
+        <button onClick={() => scrollToIndex(2)}>Soul Urge Number</button>
       </nav>
       <div>
-        <ul ref={listRef} className="box-ul">
+        <ul ref={listRef} className="box__ul">
           <li>
             {lifePathNumber !== 0 && (
-              <h3>Your life path number is: {lifePathNumber}</h3>
+              <span>Your life path number is: {lifePathNumber}</span>
             )}
             <img
               src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHdsc3pkNXcyZ21tdmoxZnc5cmJkNDl5emxnOG5taW83dGRzZzNiMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/3o85xKklNs4DxiFAsM/giphy.gif"

@@ -13,16 +13,20 @@ html[data-theme='dark'] {
   --primary-foreground: var(--white-sheer);
   --secondary-foreground: var(--white);
   --tertiary-foreground: var(--white-sheer);
+  --quaternary-foreground: var(--purple);
   --primary-background: var(--black);
   --secondary-background: var(--black-sheer);
   --tertiary-background: var(--black);
+  --quaternary-background: var(--purple);
 }
 
 html[data-theme='light'] {
   --primary-foreground: var(--black);
   --secondary-foreground: var(--dark-grey);
   --tertiary-foreground: var(--white);
+  --quaternary-foreground: var(--orange);
   --primary-background: var(--white);
   --secondary-background: var(--white-sheer);
   --tertiary-background: var(--black);
+  --quaternary-background: var(--orange);
 }
