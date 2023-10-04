@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import useFetch from '../../hooks/useFetch';
+import Button from '../Button/Button';
 import Loading from '../../components/Loading/Loading';
 import TarotCard from '../../components/TarotCard/TarotCard';
 import { TarotProps } from '../../types/TarotProps';
@@ -57,9 +58,9 @@ export default function CardReading() {
           ))}
         </div>
       )}
-      <button onClick={handleRerenderClick} className="card__btn--reading">
+      <Button onClick={handleRerenderClick} className="card__btn--reading">
         Generate a new reading
-      </button>
+      </Button>
     </div>
   );
 }

@@ -2,24 +2,19 @@
   width: 70%;
   text-align: justify;
   margin: auto;
-  padding-bottom: 2rem;
+  padding-bottom: var(--space-20);
 }
 
 .card__list--reading {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   margin: auto;
-  gap: 1rem;
+  gap: var(--space-10);
 }
 
 .card__btn--reading {
   display: block;
-  margin: 1rem auto;
-  border: 1px solid var(--black-color);
-}
-
-#dark .card__btn--reading {
-  border: 1px solid var(--white-color);
+  margin: var(--space-20) auto;
 }
 
 @media (min-width: 920px) {
