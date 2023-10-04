@@ -135,8 +135,8 @@ nav,
     background-color: var(--primary-background);
     transform: translateX(-200%);
     transition: transform var(--duration-slowest) ease-in-out,
-      opacity var(--duration-slowest) ease-in-out,
-      visibility var(--duration-slowest) ease-in-out;
+    opacity var(--duration-slowest) ease-in-out,
+    visibility var(--duration-slowest) ease-in-out;
   }
 
   .nav__list.open {
