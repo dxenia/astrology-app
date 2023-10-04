@@ -13,6 +13,10 @@
   padding: var(--space-10);
 }
 
+.results {
+  font-size: var(--small-size);
+}
+
 .box__buttons {
   display: flex;
   justify-content: flex-start;

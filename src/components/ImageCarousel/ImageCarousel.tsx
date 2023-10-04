@@ -1,5 +1,9 @@
 import { useRef } from 'react';
 
+import carouselOne from '../../assets/images/carousel-1.gif';
+import carouselTwo from '../../assets/images/carousel-2.gif';
+import carouselThree from '../../assets/images/carousel-3.gif';
+
 import './ImageCarousel.css';
 
 interface CarouselProps {
@@ -43,30 +47,27 @@ export default function Carousel({
         <ul ref={listRef} className="box__ul">
           <li>
             {lifePathNumber !== 0 && (
-              <span>Your life path number is: {lifePathNumber}</span>
+              <span className="results">
+                Your life path number is: {lifePathNumber}
+              </span>
             )}
-            <img
-              src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHdsc3pkNXcyZ21tdmoxZnc5cmJkNDl5emxnOG5taW83dGRzZzNiMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/3o85xKklNs4DxiFAsM/giphy.gif"
-              alt="Abstract face"
-            />
+            <img src={carouselOne} alt="Abstract face" />
           </li>
           <li>
             {expressionNumber !== 0 && (
-              <span>Your expression number is: {expressionNumber}</span>
+              <span className="results">
+                Your expression number is: {expressionNumber}
+              </span>
             )}
-            <img
-              src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGV1Ymg4aG02cGlwc3l0aWlwMWdxb2w1bWd4OWFoazVld3A3YWs4ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/vwGbmfK9TYfDd3FSca/giphy.gif"
-              alt="Abstract face"
-            />
+            <img src={carouselTwo} alt="Abstract face" />
           </li>
           <li>
             {soulUrgeNumber !== 0 && (
-              <span>Your soul urge number is: {soulUrgeNumber}</span>
+              <span className="results">
+                Your soul urge number is: {soulUrgeNumber}
+              </span>
             )}
-            <img
-              src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXhiMnhhbGxnd2p0dHJ1Y2FwYjhnaHI5bXAxZWFsbXB5eW1panAzMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/pL6w6uW41bzQA/giphy.gif"
-              alt="Abstract face"
-            />
+            <img src={carouselThree} alt="Abstract face" />
           </li>
         </ul>
       </div>
