@@ -1,4 +1,5 @@
 import { PaginationProps } from '../../types/PaginationProps';
+import { OnClickButton } from '../Button/Button';
 
 import './Pagination.css';
 
@@ -11,15 +12,19 @@ export const Pagination: React.FC<PaginationProps> = ({
     <div>
       <div className="pagination">
         {page > 1 && (
-          <button onClick={() => handlePagination(page - 1)} type="button">
-            Back
-          </button>
+          <a href="#tarots">
+            <OnClickButton onClick={() => handlePagination(page - 1)}>
+              👈🏼 Back
+            </OnClickButton>
+          </a>
         )}
 
         {page < totalPages && (
-          <button onClick={() => handlePagination(page + 1)} type="button">
-            Forward
-          </button>
+          <a href="#tarots">
+            <OnClickButton onClick={() => handlePagination(page + 1)}>
+              Forward 👉🏼
+            </OnClickButton>
+          </a>
         )}
       </div>
     </div>

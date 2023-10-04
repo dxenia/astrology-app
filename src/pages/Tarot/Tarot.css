@@ -8,12 +8,16 @@
 .filter-buttons {
   display: flex;
   justify-content: center;
+  margin-bottom: var(--space-10);
 }
 
 .search-input {
   display: block;
   margin: auto;
   padding: 0.5rem;
+  border: 2px solid var(--primary-foreground);
+  background-color: var(--primary-background);
+  color: var(--primary-foreground);
 }
 
 /* .card__item {

@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useCallback } from 'react';
+
+import { OnClickButton } from '../../components/Button/Button.tsx';
 import useFetch from '../../hooks/useFetch';
 import TarotCard from '../../components/TarotCard/TarotCard.tsx';
 import Loading from '../../components/Loading/Loading.tsx';
@@ -69,17 +71,19 @@ export default function Tarot() {
 
   return (
     <div>
-      <h1>Tarot Cards</h1>
+      <h1 id="tarots">Tarot Cards</h1>
       {error && <div>{error?.message}</div>}
       {loading && <Loading />}
       <div className="filter-buttons">
-        <button onClick={() => handleFilterChange('All')}>All cards</button>
-        <button onClick={() => handleFilterChange('Major')}>
+        <OnClickButton onClick={() => handleFilterChange('All')}>
+          All Arcana
+        </OnClickButton>
+        <OnClickButton onClick={() => handleFilterChange('Major')}>
           Major Arcana
-        </button>
-        <button onClick={() => handleFilterChange('Minor')}>
+        </OnClickButton>
+        <OnClickButton onClick={() => handleFilterChange('Minor')}>
           Minor Arcana
-        </button>
+        </OnClickButton>
       </div>
 
       {/* Search input */}
