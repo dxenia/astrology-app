@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useCallback } from 'react';
 
-import { OnClickButton } from '../../components/Button/Button.tsx';
+import Button from '../../components/Button/Button.tsx';
 import useFetch from '../../hooks/useFetch';
 import TarotCard from '../../components/TarotCard/TarotCard.tsx';
 import Loading from '../../components/Loading/Loading.tsx';
@@ -39,21 +39,11 @@ export default function Tarot() {
 
   const cardsToDisplay = filteredCards?.slice(startIndex, endIndex) || [];
 
-  // useEffect(() => {
-  //   if (page < 1) {
-  //     setPage(1);
-  //   } else if (page > totalFilteredPages) {
-  //     setPage(totalFilteredPages);
-  //   }
-  // }, [page, totalFilteredPages]);
-
-  useEffect(() => {
-    if (page < 1) {
-      setPage(1);
-    } else if (totalFilteredPages && page > totalFilteredPages) {
-      setPage(totalFilteredPages);
-    }
-  }, [page, totalFilteredPages]);
+  if (page < 1) {
+    setPage(1);
+  } else if (totalFilteredPages && page > totalFilteredPages) {
+    setPage(totalFilteredPages);
+  }
 
   if (error) {
     console.log(`Error: ${error.message}`);
@@ -75,15 +65,13 @@ export default function Tarot() {
       {error && <div>{error?.message}</div>}
       {loading && <Loading />}
       <div className="filter-buttons">
-        <OnClickButton onClick={() => handleFilterChange('All')}>
-          All Arcana
-        </OnClickButton>
-        <OnClickButton onClick={() => handleFilterChange('Major')}>
+        <Button onClick={() => handleFilterChange('All')}>All Arcana</Button>
+        <Button onClick={() => handleFilterChange('Major')}>
           Major Arcana
-        </OnClickButton>
-        <OnClickButton onClick={() => handleFilterChange('Minor')}>
+        </Button>
+        <Button onClick={() => handleFilterChange('Minor')}>
           Minor Arcana
-        </OnClickButton>
+        </Button>
       </div>
 
       {/* Search input */}

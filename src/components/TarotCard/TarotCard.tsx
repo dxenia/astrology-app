@@ -17,7 +17,12 @@ function TarotCard({ card }: TarotCardProps) {
           <p className="flip-card__info">
             Reversed: {card.reversed.join(', ')}
           </p>
-          <Button children="Learn More" url={card.link} target={'_blank'} />
+          <Button
+            children="Learn More"
+            url={card.link}
+            target={'_blank'}
+            className="flip-card__button"
+          />
         </div>
       </div>
     </div>

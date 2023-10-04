@@ -5,15 +5,12 @@ interface ButtonProps {
   url?: string;
   target?: '_blank' | '_self';
   className?: string;
+  onClick?: () => void;
 }
 
-interface OnClickProps extends ButtonProps {
-  onClick: () => void;
-}
-
-const LearnMoreButton = ({ children, url, target, className }: ButtonProps) => {
+const Button = ({ children, url, target, className, onClick }: ButtonProps) => {
   return (
-    <a href={url} target={target}>
+    <a href={url} target={target} onClick={onClick}>
       <button className={`${className} button--shadow shadow`}>
         {children}
       </button>
@@ -21,16 +18,4 @@ const LearnMoreButton = ({ children, url, target, className }: ButtonProps) => {
   );
 };
 
-export const OnClickButton = ({
-  children,
-  onClick,
-  className,
-}: OnClickProps) => {
-  return (
-    <button onClick={onClick} className={`${className} button--shadow shadow`}>
-      {children}
-    </button>
-  );
-};
-
-export default LearnMoreButton;
+export default Button;

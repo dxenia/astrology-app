@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react';
 
-import { OnClickButton } from '../../components/Button/Button';
+import Button from '../../components/Button/Button';
 import ImageCarousel from '../../components/ImageCarousel/ImageCarousel';
 import { expressionLetters, soulUrgeLetters } from '../../api/data';
 import { lifePathData } from '../../api/lifePathData';
@@ -132,7 +132,7 @@ export default function Numerology() {
         </form>
       </div>
 
-      <OnClickButton onClick={calculateLifePathNumber}>Calculate</OnClickButton>
+      <Button onClick={calculateLifePathNumber}>Calculate</Button>
 
       <div>
         {showCarousel && (

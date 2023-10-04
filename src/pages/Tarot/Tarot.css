@@ -7,6 +7,8 @@
 
 .filter-buttons {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   margin-bottom: var(--space-10);
 }
@@ -27,6 +29,10 @@
 } */
 
 @media (min-width: 640px) {
+  .filter-buttons {
+    flex-direction: row;
+  }
+
   .card__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
