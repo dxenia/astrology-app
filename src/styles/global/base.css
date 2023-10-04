@@ -46,3 +46,7 @@ h3 {
   font-size: var(--medium-size);
   font-weight: var(--light-weight);
 }
+
+.page {
+  min-height: 80vh;
+}

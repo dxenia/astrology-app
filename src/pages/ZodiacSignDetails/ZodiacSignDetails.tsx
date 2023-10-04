@@ -1,7 +1,9 @@
-import useFetch from '../../hooks/useFetch';
-import { ZodiacProps } from '../../types/ZodiacProps.ts';
 import { useParams, useNavigate } from 'react-router-dom';
+
+import useFetch from '../../hooks/useFetch';
+import Button from '../../components/Button/Button.tsx';
 import Loading from '../../components/Loading/Loading.tsx';
+import { ZodiacProps } from '../../types/ZodiacProps.ts';
 import './ZodiacSignDetails.css';
 
 function ZodiacSignDetails() {
@@ -19,40 +21,43 @@ function ZodiacSignDetails() {
   const navigate = useNavigate();
 
   return (
-    <div className="card__details">
+    <div className="page">
       {error && <div>{error?.message}</div>}
       {loading && <Loading />}
 
-      <div>
-        <h1>{sign?.name}</h1>
-        <img src={sign?.image} alt={sign?.name}></img>
-        <span> | {sign?.dates}</span>
+      <div className="card-details">
+        <div className="card-details__heading">
+          <h1>{sign?.name}</h1>
 
-        <button
-          className="card__details--back-btn"
+          <img src={sign?.image} alt={sign?.name}></img>
+          <span> {sign?.dates}</span>
+        </div>
+        <ul>
+          <li>
+            <h3>Celestial body:</h3> {sign?.ruler.type}, {sign?.ruler.name}
+            <img src={sign?.ruler.image}></img>
+          </li>
+          <li>
+            <h3>Transition consistency:</h3> {sign?.ruler.transition}.
+          </li>
+          <li>
+            <h3>Relevant keywords of the luminary:</h3>{' '}
+            {sign?.ruler.keywords?.join(', ')}.
+          </li>
+
+          <li>
+            <h3>Sign's Positive Traits</h3> {sign?.positiveTraits?.join(', ')}
+          </li>
+          <li>
+            <h3>Sign's Negative Traits</h3> {sign?.negativeTraits?.join(', ')}
+          </li>
+        </ul>
+        <Button
+          className="card__details__back-btn"
           onClick={() => navigate(-1)}
         >
           Go back to Zodiac Page
-        </button>
-        <ul>
-          <li>
-            Celestial body: {sign?.ruler.type}, {sign?.ruler.name}
-            <img src={sign?.ruler.image}></img>
-          </li>
-          <li>Transition consistency: {sign?.ruler.transition}.</li>
-          <li>
-            The ruler of the sign is characterised by the following keywords:{' '}
-            {sign?.ruler.keywords?.join(', ')}.
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <h3>Positive Traits</h3> {sign?.positiveTraits?.join(', ')}
-          </li>
-          <li>
-            <h3>Negative Traits</h3> {sign?.negativeTraits?.join(', ')}
-          </li>
-        </ul>
+        </Button>
       </div>
     </div>
   );

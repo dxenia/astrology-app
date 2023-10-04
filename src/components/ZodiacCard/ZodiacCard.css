@@ -7,11 +7,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  font-weight: var(--regular-weight);
+  gap: var(--space-10);
 }
 
 .card__img {
   height: 8rem;
+}
+
+[data-theme='dark'] .card__img {
+  -webkit-filter: invert(80%);
+  filter: invert(80%);
 }
 
 @media (min-width: 768px) {

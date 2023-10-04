@@ -1,8 +1,13 @@
+.description {
+  width: 70%;
+  margin: auto;
+  text-align: justify;
+}
+
 .astrology__list {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  padding: 3rem;
-  gap: 2rem;
+  padding: var(--space-20);
 }
 
 @media (min-width: 768px) {
@@ -15,7 +20,7 @@
   .astrology__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 3rem;
+    padding: var(--space-30);
     width: 80%;
     margin: auto;
   }

@@ -1,8 +1,9 @@
-import './Zodiac.css';
 import useFetch from '../../hooks/useFetch';
-import { ZodiacProps } from '../../types/ZodiacProps.ts';
 import ZodiacCard from '../../components/ZodiacCard/ZodiacCard.tsx';
 import Loading from '../../components/Loading/Loading.tsx';
+import { ZodiacProps } from '../../types/ZodiacProps.ts';
+
+import './Zodiac.css';
 
 function Zodiac() {
   const url = 'https://jps-tarot-api.azurewebsites.net/api/Zodiac/Get';
@@ -18,6 +19,15 @@ function Zodiac() {
     <>
       <div>
         <h1>Astrology</h1>
+        <p className="description">
+          Astrology is an ancient and complex system of divination that has been
+          practiced for thousands of years. Its origins can be traced back to
+          various civilizations throughout history, including Mesopotamia,
+          Egypt, and Greece. The Western zodiac, also known as the tropical
+          zodiac, is based on the position of the Sun relative to the twelve
+          zodiac signs at the time of a person's birth. Each sign is associated
+          with specific personality traits and characteristics.
+        </p>
         {error && <div>{error?.message}</div>}
         {loading && <Loading />}
         <div className="astrology__list">
