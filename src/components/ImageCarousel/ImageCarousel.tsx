@@ -8,7 +8,7 @@ interface CarouselProps {
   soulUrgeNumber: number;
 }
 
-export default function ImageCarousel({
+export default function Carousel({
   lifePathNumber,
   expressionNumber,
   soulUrgeNumber,
@@ -31,15 +31,30 @@ export default function ImageCarousel({
   return (
     <div className="carousel-container">
       <nav className="box">
-        <button onClick={() => scrollToIndex(0)}>Life Path Number</button>
-        <button onClick={() => scrollToIndex(1)}>Expression Number</button>
-        <button onClick={() => scrollToIndex(2)}>Soul Urge Number</button>
+        <button
+          className="button-shadow shadow"
+          onClick={() => scrollToIndex(0)}
+        >
+          Life Path Number
+        </button>
+        <button
+          className="button-shadow shadow"
+          onClick={() => scrollToIndex(1)}
+        >
+          Expression Number
+        </button>
+        <button
+          className="button-shadow shadow"
+          onClick={() => scrollToIndex(2)}
+        >
+          Soul Urge Number
+        </button>
       </nav>
       <div>
         <ul ref={listRef} className="box-ul">
           <li>
             {lifePathNumber !== 0 && (
-              <span>Your life path number is: {lifePathNumber}</span>
+              <h3>Your life path number is: {lifePathNumber}</h3>
             )}
             <img
               src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHdsc3pkNXcyZ21tdmoxZnc5cmJkNDl5emxnOG5taW83dGRzZzNiMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/3o85xKklNs4DxiFAsM/giphy.gif"

@@ -8,11 +8,11 @@
   display: flex;
   gap: 1rem;
   justify-content: flex-start;
+  margin: 1rem;
 }
 
 .box button {
-  font-size: 1.5rem;
-  font-weight: var(--light-weight);
+  margin: 1rem;
 }
 
 .box-ul {
