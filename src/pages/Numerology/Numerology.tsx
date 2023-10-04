@@ -1,8 +1,9 @@
 import { useState, useMemo } from 'react';
+
+import ImageCarousel from '../../components/ImageCarousel/ImageCarousel';
 import { expressionLetters, soulUrgeLetters } from '../../api/data';
 import { lifePathData } from '../../api/lifePathData';
 import { LifePathProps } from '../../types/LifePathProps';
-import Carousel from '../../components/ImageCarousel/ImageCarousel';
 
 import './Numerology.css';
 
@@ -12,7 +13,6 @@ export default function Numerology() {
   const [lifePathNumber, setLifePathNumber] = useState<number>(0);
   const [expressionNumber, setExpressionNumber] = useState<number>(0);
   const [soulUrgeNumber, setSoulUrgeNumber] = useState<number>(0);
-
   const [showCarousel, setShowCarousel] = useState(false);
 
   const calculateLifePathNumber = (): void => {
@@ -97,17 +97,26 @@ export default function Numerology() {
 
   return (
     <section className="numerology">
-      <h1>Numerology Calculator</h1>
-      <span>Calculate your numerology one-click.</span>
-
+      <h1 className="glow">Numerology Calculator</h1>
+      <p className="numerology__paragraph">
+        Numerology has a rich and diverse history that spans millennia. It has
+        evolved from ancient mystical beliefs to become a contemporary practice
+        that some people use for self-reflection and guidance.
+      </p>
+      <p className="numerology__paragraph">
+        Here you can calculate your numerology in one-click. Insert birth date
+        and full name to discover your Life Path Number, Expression Number and
+        Soul Urge Number.
+      </p>
       <div>
-        <form>
-          <label htmlFor="name">Date of Birth:</label>
+        <form className="numerology__form">
+          <label htmlFor="date">Date of Birth:</label>
           <input
             value={dateOfBirth}
             onChange={(e) => setDateOfBirth(e.target.value)}
             id="name"
             placeholder="YYYY/MM/DD"
+            required
           />
 
           <label htmlFor="name">Full Name:</label>
@@ -116,16 +125,22 @@ export default function Numerology() {
             onChange={(e) => setFullName(e.target.value)}
             id="name"
             type="text"
-            placeholder="John Wick"
+            placeholder="Jane Doe"
+            required
           />
         </form>
       </div>
 
-      <button onClick={calculateLifePathNumber}>Calculate</button>
+      <button
+        onClick={calculateLifePathNumber}
+        className="button--shadow shadow"
+      >
+        Calculate
+      </button>
 
       <div>
         {showCarousel && (
-          <Carousel
+          <ImageCarousel
             lifePathNumber={lifePathNumber}
             expressionNumber={expressionNumber}
             soulUrgeNumber={soulUrgeNumber}

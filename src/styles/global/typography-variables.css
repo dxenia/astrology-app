@@ -29,7 +29,7 @@
   --small-size: 1rem;
   --regular-size: 1.2rem;
   --medium-size: 1.7rem;
-  --large-size: 4rem;
+  --large-size: 3.5rem;
   --x-large-size: 6rem;
 }
 
@@ -38,7 +38,7 @@
 @media (min-width: 768px) {
   :root {
     --small-size: 0.6rem;
-    --regular-size: 0.8rem;
+    --regular-size: 1rem;
     --medium-size: 1.5rem;
     --large-size: 5rem;
     --x-large-size: 8rem;

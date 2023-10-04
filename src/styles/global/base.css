@@ -4,10 +4,10 @@ html {
 
 body {
   font-family: var(--body-font);
-  font-weight: var(--light-weight);
+  font-weight: var(--regular-weight);
   font-size: var(--regular-size);
   color: var(--primary-foreground);
-  letter-spacing: var(--space-007);
+  letter-spacing: var(--space-005);
 }
 
 a {

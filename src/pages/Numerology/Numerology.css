@@ -2,21 +2,46 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 1rem;
-  background: url('https://images.unsplash.com/photo-1588594276800-2de0522b3b73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBhdHRlcm58ZW58MHx8MHx8fDA%3D&w=1000&q=80');
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
-.numerology h1 {
-  color: var(--white-color);
-  background-color: var(--black-color);
+/* .glow {
+  color: #000000;
+  text-align: center;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #ffffff,
+    0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff;
+} */
+
+.numerology__paragraph {
+  text-align: justify;
+  width: 90%;
 }
 
-.numerology form {
+.numerology__form {
   display: flex;
   flex-direction: column;
   margin: auto;
+  border: 2px solid var(--primary-foreground);
+  padding: var(--space-10);
+  gap: var(--space-05);
+  margin-top: var(--space-20);
+}
+
+.numerology__form label {
+  font-weight: var(--medium-weight);
+}
+
+.numerology__form input {
+  border: 2px solid var(--primary-foreground);
+  padding: var(--space-05);
+  background-color: var(--primary-background);
+  color: var(--primary-foreground);
+}
+
+@media (min-width: 768px) {
+  .numerology__paragraph {
+    width: 50%;
+  }
 }

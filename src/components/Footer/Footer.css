@@ -4,6 +4,7 @@ footer {
   left: 0;
   right: 0;
   padding-top: var(--space-20);
+  border-top: 2px solid var(--light-grey);
 }
 
 .footer__contact {

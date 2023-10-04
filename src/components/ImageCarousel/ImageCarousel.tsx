@@ -8,7 +8,7 @@ interface CarouselProps {
   soulUrgeNumber: number;
 }
 
-export default function Carousel({
+export default function ImageCarousel({
   lifePathNumber,
   expressionNumber,
   soulUrgeNumber,
