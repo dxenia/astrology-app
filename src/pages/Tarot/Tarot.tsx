@@ -3,7 +3,7 @@ import { useCallback } from 'react';
 
 import Button from '../../components/Button/Button.tsx';
 import useFetch from '../../hooks/useFetch';
-import TarotCard from '../../components/TarotCard/TarotCard.tsx';
+import FlipCard from '../../components/FlipCard/FlipCard.tsx';
 import Loading from '../../components/Loading/Loading.tsx';
 import { TarotProps } from '../../types/TarotProps.ts';
 import { Pagination } from '../../components/Pagination/Pagination.tsx';
@@ -85,7 +85,7 @@ export default function Tarot() {
 
       <div className="card__list">
         {cardsToDisplay.map((card) => (
-          <TarotCard key={card.id} card={card} />
+          <FlipCard key={card.id} card={card} />
         ))}
       </div>
       <Pagination
