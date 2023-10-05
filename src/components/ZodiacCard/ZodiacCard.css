@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-weight: var(--bold-weight);
+  font-weight: var(--medium-weight);
   gap: var(--space-10);
 }
 

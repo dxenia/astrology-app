@@ -6,7 +6,7 @@
   --white: rgb(255, 255, 255);
   --white-sheer: rgba(255, 255, 255, 0.8);
   --orange: rgb(255, 193, 77);
-  --purple: rgb(136, 0, 255);
+  --purple: rgb(90, 0, 169);
 }
 
 html[data-theme='dark'] {
