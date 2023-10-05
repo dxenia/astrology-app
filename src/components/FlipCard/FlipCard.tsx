@@ -1,7 +1,7 @@
 import Button from '../Button/Button.tsx';
 import { TarotCardProps } from './TarotCard.types.ts';
 
-import './TarotCard.css';
+import './FlipCard.css';
 
 function TarotCard({ card }: TarotCardProps) {
   return (
