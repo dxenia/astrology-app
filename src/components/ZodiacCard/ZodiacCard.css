@@ -7,8 +7,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-weight: var(--regular-weight);
+  font-weight: var(--bold-weight);
   gap: var(--space-10);
+}
+
+.card__item span {
+  background-color: var(--quaternary-foreground);
+  padding: var(--space-02);
 }
 
 .card__img {

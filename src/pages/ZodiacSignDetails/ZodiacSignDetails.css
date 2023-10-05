@@ -1,12 +1,12 @@
 .card-details {
   width: 80%;
   margin: auto;
+  margin-bottom: var(--space-20);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   text-align: left;
-  margin-bottom: var(--space-20);
 }
 
 .card-details__heading {
@@ -28,11 +28,14 @@
 }
 
 .card-details h3 {
-  margin-top: 2rem;
+  margin-top: var(--space-20);
 }
 
 .card-details ul {
   margin-bottom: var(--space-20);
+  border: 2px solid var(--primary-foreground);
+  padding: var(--space-20);
+  box-shadow: var(--quaternary-foreground) 5px 5px;
 }
 
 .snake-img {
