@@ -4,6 +4,15 @@
   text-align: justify;
 }
 
+.astrology__image {
+  display: block;
+  margin: auto;
+  width: 15rem;
+  margin-bottom: -5rem;
+  margin-top: var(--space-20);
+  border-radius: 0 0 50% 50%;
+}
+
 .astrology__list {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -11,12 +20,21 @@
 }
 
 @media (min-width: 768px) {
+  .astrology__image {
+    margin-bottom: 0;
+  }
+
   .astrology__list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 992px) {
+  .astrology__image {
+    margin-bottom: -5.5rem;
+    border-radius: 0;
+  }
+
   .astrology__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

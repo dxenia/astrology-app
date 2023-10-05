@@ -34,3 +34,8 @@
 .card-details ul {
   margin-bottom: var(--space-20);
 }
+
+.snake-img {
+  width: 10rem;
+  margin: var(--space-20);
+}
