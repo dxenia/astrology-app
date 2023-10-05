@@ -11,7 +11,7 @@ footer {
   display: flex;
   justify-content: center;
   text-align: justify;
-  width: 60%;
+  width: 90%;
   margin: auto;
   font-size: var(--small-size);
   font-weight: var(--regular-weight);
