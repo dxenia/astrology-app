@@ -1,3 +1,4 @@
+import eyes from '../../assets/images/eyes.gif';
 import './About.css';
 
 export default function About() {
@@ -8,6 +9,7 @@ export default function About() {
         This is my final project for FooCoding's programme in Malmö, using React
         and Typescript. MORE CONTENT TO BE ADDED.
       </p>
+      <img src={eyes} alt="Eyes" />
     </div>
   );
 }

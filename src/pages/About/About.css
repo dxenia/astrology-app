@@ -1,9 +1,14 @@
 .about {
   height: 110vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about p {
   width: 70%;
-  margin: auto;
-  text-align: justify;
+}
+
+.about img {
+  width: 5rem;
 }
