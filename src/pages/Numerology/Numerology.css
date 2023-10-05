@@ -23,6 +23,7 @@
 .numerology__form {
   display: flex;
   flex-direction: column;
+  justify-items: center;
   margin: auto;
   border: 2px solid var(--primary-foreground);
   padding: var(--space-10);

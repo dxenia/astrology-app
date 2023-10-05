@@ -19,8 +19,8 @@
     }
   }
   &:active {
-    background-color: var(--primary-foreground);
-    color: var(--primary-background);
+    background-color: var(--quaternary-foreground);
+    color: var(--primary-foreground);
     transition: color 200ms, background-color 200ms;
   }
 }

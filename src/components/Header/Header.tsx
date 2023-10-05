@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
@@ -16,6 +16,14 @@ export default function Header() {
 
   const openClose = isOpen ? 'open' : 'close';
   const hamburger = `line ${isOpen ? 'line-rotate' : ''}`;
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
+  useEffect(() => {
+    scrollToTop();
+  }, [location.pathname]);
 
   return (
     <header>
