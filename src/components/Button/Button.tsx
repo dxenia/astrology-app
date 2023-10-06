@@ -7,6 +7,7 @@ const Button = ({
   target,
   className,
   onClick,
+  type,
   as = 'button',
 }: ButtonProps) => {
   if (as === 'link' && url) {
@@ -23,6 +24,7 @@ const Button = ({
   } else {
     return (
       <button
+        type={type}
         className={`${className} button--shadow shadow`}
         onClick={onClick}
       >

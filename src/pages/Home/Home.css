@@ -67,7 +67,7 @@ html[data-theme='dark'] .home__img--first-section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 15% auto;
+  margin: 10% auto;
   width: 80%;
 }
 
@@ -103,8 +103,8 @@ html[data-theme='dark'] .home__img--first-section {
 /* subscribe form */
 
 .home__third-section {
-  background-color: #121212;
-  color: white;
+  background: var(--tertiary-background);
+  margin: var(--space-40) auto;
 }
 
 .home__form-wrapper {
@@ -115,16 +115,12 @@ html[data-theme='dark'] .home__img--first-section {
   margin: auto;
   gap: 2rem;
   padding: 2rem;
-  width: 17rem;
+  width: 80%;
+  color: var(--tertiary-foreground);
 }
 
 .home__sub-heading--third-section {
   font-size: var(--regular-size);
-}
-
-.form__wrapper article {
-  width: 50%;
-  text-align: left;
 }
 
 /* dark mode & media queries */

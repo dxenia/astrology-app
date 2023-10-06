@@ -1,5 +1,7 @@
 import { ChangeEvent, FormEvent, useState } from 'react';
 
+import Button from '../Button/Button';
+
 import './SubscribeForm.css';
 
 interface FormProps {
@@ -27,6 +29,11 @@ export const SubscribeForm = ({ onSubmit }: FormProps) => {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+
+    if (!formData.firstName || !formData.birthday || !formData.email) {
+      alert('Please fill in all fields.');
+      return;
+    }
 
     onSubmit(formData);
   };
@@ -58,9 +65,9 @@ export const SubscribeForm = ({ onSubmit }: FormProps) => {
           onChange={handleInputChange}
         />
       </label>
-      <button type="submit" className="subscribe-form__button">
+      <Button type="submit" className="subscribe-form__button">
         Submit form
-      </button>
+      </Button>
     </form>
   );
 };

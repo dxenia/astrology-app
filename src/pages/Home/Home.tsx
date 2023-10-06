@@ -90,9 +90,9 @@ export default function Home() {
             <h2 className="home__heading--third-section">
               Curious about your zodiac sign?
             </h2>
-            <span className="home__sub-heading--third-section">
+            <h3 className="home__sub-heading--third-section">
               Sign up for our newsletter!
-            </span>
+            </h3>
           </article>
           <SubscribeForm onSubmit={handleSubmit} />
         </div>
