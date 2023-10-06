@@ -14,7 +14,6 @@
 }
 
 .accordion__title:hover {
-  transition: ease-in-out var(--duration-slow);
   background-color: var(--primary-background);
   cursor: pointer;
 }
@@ -22,12 +21,13 @@
 .accordion__content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height var(--duration-slowest) ease-in-out;
+  transition: max-height var(--duration-slow) ease-in-out;
   text-align: justify;
   margin: 0.5rem;
 }
 
 .accordion__content.dropped {
+  transition: ease-in-out var(--duration-slowest);
   max-height: 600px;
 }
 
