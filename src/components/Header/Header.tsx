@@ -32,7 +32,7 @@ export default function Header() {
           <NavLink className="logo" to="/">
             lunar
           </NavLink>
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
           <div className="menu" onClick={closeMenu}>
             <span className={hamburger}></span>
             <span className={hamburger}></span>
@@ -92,6 +92,9 @@ export default function Header() {
             >
               Numerology
             </NavLink>
+          </li>
+          <li>
+            <ThemeToggle />
           </li>
         </ul>
       </nav>

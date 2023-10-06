@@ -3,6 +3,7 @@
   display: inline-block;
   width: 40px;
   height: 20px;
+  margin-top: 3px;
 }
 
 .toggle__switch input {
@@ -53,6 +54,6 @@ input:checked + .toggle__slider:before {
 
 @media (max-width: 767px) {
   .toggle__switch {
-    margin-bottom: 14px;
+    right: 23px;
   }
 }

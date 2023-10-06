@@ -4,8 +4,8 @@ export interface TarotProps {
   link: string;
   name: string;
   reversed: string[];
-  type: 'Major' | 'Minor';
   upright: string[];
+  type: 'Major' | 'Minor';
 }
 
 export interface TarotCardProps {

@@ -71,7 +71,7 @@ nav,
 
 @media (max-width: 767px) {
   header {
-    height: 90px;
+    height: 73px;
   }
 
   .nav__options {
@@ -135,7 +135,8 @@ nav,
     justify-content: flex-start;
     align-items: flex-end;
     width: 100vw;
-    padding-top: var(--space-10);
+    margin-top: 17.5px;
+    padding-top: var(--space-20);
     height: 100vh;
     gap: var(--space-20);
     background-color: var(--primary-background);
@@ -152,7 +153,7 @@ nav,
   }
 
   .nav__list.close {
-    margin-top: 81px;
+    margin-top: 65px;
     position: absolute;
   }
 
