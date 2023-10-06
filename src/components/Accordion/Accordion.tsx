@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { AccordionProps } from '../../types/AccordionProps';
+
+import { AccordionProps } from './Accordion.types';
 
 import './Accordion.css';
 
