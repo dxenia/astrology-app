@@ -2,8 +2,8 @@ import { useState, useMemo } from 'react';
 
 import Button from '../../components/Button/Button';
 import ImageCarousel from '../../components/ImageCarousel/ImageCarousel';
-import { expressionLetters, soulUrgeLetters } from '../../api/data';
-import { lifePathData } from '../../api/lifePathData';
+import { expressionLetters, soulUrgeLetters } from '../../data/lettersData';
+import { lifePathData } from '../../data/lifePathData';
 import { LifePathProps } from '../../types/LifePathProps';
 
 import './Numerology.css';

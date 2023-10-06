@@ -1,6 +1,6 @@
 import shapes from '../../assets/images/shapes.gif';
 import Accordion from '../../components/Accordion/Accordion';
-import { accordionData } from '../../api/accordionData';
+import { accordionData } from '../../data/accordionData';
 import './About.css';
 
 export default function About() {
