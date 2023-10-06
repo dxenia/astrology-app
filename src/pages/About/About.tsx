@@ -8,7 +8,7 @@ export default function About() {
     <section className="about">
       <h1>About</h1>
       <h3>So what is Lunar, really?</h3>
-      <p>
+      <p className="about__info">
         In this section I will walk you through all you need to know about my
         website.
       </p>

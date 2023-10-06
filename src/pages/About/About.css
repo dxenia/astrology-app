@@ -5,10 +5,21 @@
   align-items: center;
 }
 
+.about__info {
+  width: 90%;
+  text-align: justify;
+}
+
 .about img {
   width: 15rem;
 }
 
 .about {
   margin-bottom: var(--space-20);
+}
+
+@media (min-width: 768px) {
+  .about__info {
+    text-align: center;
+  }
 }
