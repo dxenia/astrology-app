@@ -1,5 +1,5 @@
 import Button from '../Button/Button.tsx';
-import { TarotCardProps } from '../TarotCard/TarotCard.types.ts';
+import { TarotCardProps } from '../FlipCard/TarotCard.types.ts';
 
 import './TarotCard.css';
 
