@@ -18,3 +18,7 @@ export interface ZodiacProps {
   };
   modality: { image: string; keywords: string[]; name: string };
 }
+
+export interface ZodiacCardProps {
+  sign: ZodiacProps;
+}

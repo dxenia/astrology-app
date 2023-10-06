@@ -15,6 +15,10 @@ button {
   padding: var(--space-05);
 }
 
+a {
+  text-decoration: none;
+}
+
 a:hover,
 button:hover {
   cursor: pointer;
