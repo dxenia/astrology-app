@@ -6,16 +6,38 @@ interface ButtonProps {
   target?: '_blank' | '_self';
   className?: string;
   onClick?: () => void;
+  as?: 'button' | 'link';
 }
 
-const Button = ({ children, url, target, className, onClick }: ButtonProps) => {
-  return (
-    <a href={url} target={target} onClick={onClick}>
-      <button className={`${className} button--shadow shadow`}>
+const Button = ({
+  children,
+  url,
+  target,
+  className,
+  onClick,
+  as = 'button',
+}: ButtonProps) => {
+  if (as === 'link' && url) {
+    return (
+      <a
+        href={url}
+        target={target}
+        className={`${className} button--shadow shadow`}
+        onClick={onClick}
+      >
+        {children}
+      </a>
+    );
+  } else {
+    return (
+      <button
+        className={`${className} button--shadow shadow`}
+        onClick={onClick}
+      >
         {children}
       </button>
-    </a>
-  );
+    );
+  }
 };
 
 export default Button;

@@ -18,6 +18,7 @@ function TarotCard({ card }: TarotCardProps) {
             Reversed: {card.reversed.join(', ')}
           </p>
           <Button
+            as="link"
             children="Learn More"
             url={card.link}
             target={'_blank'}

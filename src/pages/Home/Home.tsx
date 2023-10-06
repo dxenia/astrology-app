@@ -30,6 +30,7 @@ export default function Home() {
             within the Tarot cards.
           </p>
           <Button
+            as="link"
             children="Learn More →"
             url={'/about'}
             target={'_self'}

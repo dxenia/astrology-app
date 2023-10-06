@@ -11,12 +11,6 @@ body {
   font-size: var(--regular-size);
 }
 
-a {
-  font-weight: var(--bold-weight);
-  letter-spacing: var(--space-02);
-  text-decoration: none;
-}
-
 button {
   padding: var(--space-05);
 }

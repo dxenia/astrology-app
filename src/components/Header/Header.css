@@ -10,6 +10,12 @@ header {
   z-index: 99999;
 }
 
+.nav a {
+  font-weight: var(--bold-weight);
+  letter-spacing: var(--space-02);
+  text-decoration: none;
+}
+
 .nav {
   padding: var(--space-05);
 }
@@ -135,8 +141,8 @@ nav,
     background-color: var(--primary-background);
     transform: translateX(-200%);
     transition: transform var(--duration-slowest) ease-in-out,
-    opacity var(--duration-slowest) ease-in-out,
-    visibility var(--duration-slowest) ease-in-out;
+      opacity var(--duration-slowest) ease-in-out,
+      visibility var(--duration-slowest) ease-in-out;
   }
 
   .nav__list.open {
