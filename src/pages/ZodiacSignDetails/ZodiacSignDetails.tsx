@@ -30,14 +30,14 @@ function ZodiacSignDetails() {
         <div className="card-details__heading">
           <h1>{sign?.name}</h1>
 
-          <img src={sign?.image} alt={sign?.name}></img>
+          <img src={sign?.image} alt={sign?.name} className="invert"></img>
           <span> {sign?.dates}</span>
         </div>
         <ul>
           <li>
             <h3>Ruler:</h3>
             {sign?.ruler.name}
-            <img src={sign?.ruler.image}></img>
+            <img src={sign?.ruler.image} className="invert"></img>
           </li>
           <li>
             <h3>Transition consistency:</h3> {sign?.ruler.transition}.
@@ -54,7 +54,7 @@ function ZodiacSignDetails() {
             <h3>Sign's Negative Traits</h3> {sign?.negativeTraits?.join(', ')}
           </li>
         </ul>
-        <img src={snake} className="snake-img" alt="Snake" />
+        <img src={snake} className="snake-img invert" alt="Snake" />
         <Button
           className="card__details__back-btn"
           onClick={() => navigate(-1)}

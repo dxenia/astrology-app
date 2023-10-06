@@ -38,7 +38,7 @@ export default function Home() {
         </div>
         <img
           src={zodiacWheel}
-          className="home__img--first-section"
+          className="home__img--first-section invert"
           alt="Zodiac Wheel"
         ></img>
       </section>
@@ -47,7 +47,7 @@ export default function Home() {
         <h2>What can you find on Lunar?</h2>
         <ul className="home__list">
           <li className="home__list-item">
-            <img src={moth} className="home__icon"></img>
+            <img src={moth} className="home__icon invert"></img>
             <h3>Zodiac Signs</h3>
             <p>
               Dive into the cosmic mysteries of astrology on our website.
@@ -58,7 +58,7 @@ export default function Home() {
             </p>
           </li>
           <li className="home__list-item">
-            <img src={butterfly} className="home__icon"></img>
+            <img src={butterfly} className="home__icon invert"></img>
             <h3>Tarot Cards</h3>
             <p>
               Unveil the enigmatic world of tarot on our website. Experience the

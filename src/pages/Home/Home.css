@@ -47,8 +47,9 @@
   );
 }
 
-/* 
- */
+html[data-theme='dark'] .home__img--first-section {
+  background: none;
+}
 
 .home__button {
   margin: 1rem auto;
@@ -129,7 +130,7 @@
 /* dark mode & media queries */
 
 html[data-theme='dark'] .home__list-item:nth-child(3) > .home__icon {
-  opacity: 50%;
+  opacity: 75%;
 }
 
 @media (min-width: 768px) {

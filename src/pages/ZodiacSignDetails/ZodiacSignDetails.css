@@ -22,11 +22,6 @@
   margin-bottom: var(--space-10);
 }
 
-[data-theme='dark'] .card-details img {
-  -webkit-filter: invert(80%);
-  filter: invert(80%);
-}
-
 .card-details h3 {
   margin-top: var(--space-20);
 }
