@@ -1,14 +1,14 @@
 .about {
-  height: 110vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.about p {
-  width: 70%;
+.about img {
+  width: 15rem;
 }
 
-.about img {
-  width: 5rem;
+.about {
+  margin-bottom: var(--space-20);
 }

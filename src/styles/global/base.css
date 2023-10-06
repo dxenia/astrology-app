@@ -8,6 +8,7 @@ body {
   font-size: var(--regular-size);
   color: var(--primary-foreground);
   letter-spacing: var(--space-005);
+  font-size: var(--regular-size);
 }
 
 a {

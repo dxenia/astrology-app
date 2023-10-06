@@ -1,15 +1,23 @@
-import eyes from '../../assets/images/eyes.gif';
+import shapes from '../../assets/images/shapes.gif';
+import Accordion from '../../components/Accordion/Accordion';
+import { accordionData } from '../../api/accordionData';
 import './About.css';
 
 export default function About() {
   return (
-    <div className="about">
+    <section className="about">
       <h1>About</h1>
+      <h3>So what is Lunar, really?</h3>
       <p>
-        This is my final project for FooCoding's programme in Malmö, using React
-        and Typescript. MORE CONTENT TO BE ADDED.
+        In this section I will walk you through all you need to know about my
+        website.
       </p>
-      <img src={eyes} alt="Eyes" />
-    </div>
+      <img src={shapes} alt="Geometric shapes" className="about__image" />
+      <div className="about__accordion">
+        {accordionData.map(({ title, content }) => (
+          <Accordion title={title} content={content} />
+        ))}
+      </div>
+    </section>
   );
 }
