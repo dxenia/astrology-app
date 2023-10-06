@@ -14,8 +14,8 @@ export default function About() {
       </p>
       <img src={shapes} alt="Geometric shapes" className="about__image" />
       <div className="about__accordion">
-        {accordionData.map(({ title, content }) => (
-          <Accordion title={title} content={content} />
+        {accordionData.map(({ title, content }, index) => (
+          <Accordion key={index} title={title} content={content} />
         ))}
       </div>
     </section>

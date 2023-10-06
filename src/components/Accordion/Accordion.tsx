@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { AccordionProps } from '../../types/AccordionProps';
 
+import './Accordion.css';
+
 const Accordion = ({ title, content }: AccordionProps) => {
   const [isActive, setIsActive] = useState(false);
 
