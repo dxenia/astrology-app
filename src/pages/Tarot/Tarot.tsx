@@ -5,7 +5,7 @@ import Button from '../../components/Button/Button.tsx';
 import useFetch from '../../hooks/useFetch';
 import FlipCard from '../../components/FlipCard/FlipCard.tsx';
 import Loading from '../../components/Loading/Loading.tsx';
-import { TarotProps } from '../../types/TarotProps.ts';
+import { TarotProps } from '../../types/TarotProps.types.ts';
 import { Pagination } from '../../components/Pagination/Pagination.tsx';
 import CardReading from '../../components/CardReading/CardReading.tsx';
 

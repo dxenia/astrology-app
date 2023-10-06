@@ -2,7 +2,7 @@ import owlHead from '../../assets/images/owl-head.webp';
 import useFetch from '../../hooks/useFetch';
 import ZodiacCard from '../../components/ZodiacCard/ZodiacCard.tsx';
 import Loading from '../../components/Loading/Loading.tsx';
-import { ZodiacProps } from '../../types/ZodiacProps.ts';
+import { ZodiacProps } from '../../types/ZodiacProps.types.ts';
 
 import './Zodiac.css';
 

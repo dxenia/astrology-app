@@ -4,7 +4,7 @@ import snake from '../../assets/images/snake.png';
 import useFetch from '../../hooks/useFetch';
 import Button from '../../components/Button/Button.tsx';
 import Loading from '../../components/Loading/Loading.tsx';
-import { ZodiacProps } from '../../types/ZodiacProps.ts';
+import { ZodiacProps } from '../../types/ZodiacProps.types.ts';
 import './ZodiacSignDetails.css';
 
 function ZodiacSignDetails() {

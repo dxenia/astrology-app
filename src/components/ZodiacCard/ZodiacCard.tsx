@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import type { ZodiacCardProps } from '../../types/ZodiacProps';
+import type { ZodiacCardProps } from '../../types/ZodiacProps.types';
 
 import './ZodiacCard.css';
 

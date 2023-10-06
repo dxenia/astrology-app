@@ -4,7 +4,7 @@ import useFetch from '../../hooks/useFetch';
 import Button from '../Button/Button';
 import Loading from '../../components/Loading/Loading';
 import FlipCard from '../../components/FlipCard/FlipCard';
-import { TarotProps } from '../../types/TarotProps';
+import { TarotProps } from '../../types/TarotProps.types';
 
 import './CardReading.css';
 
