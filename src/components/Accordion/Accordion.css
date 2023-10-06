@@ -14,6 +14,7 @@
 }
 
 .accordion__title:hover {
+  transition: ease-in-out var(--duration-standard);
   background-color: var(--primary-background);
   cursor: pointer;
 }
