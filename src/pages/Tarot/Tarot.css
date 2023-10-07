@@ -53,8 +53,22 @@
 
 @media (min-width: 920px) {
   .card__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1300px) {
+  .card__list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    width: 100%;
+  }
+}
+
+@media (min-width: 2560px) {
+  .card__list {
+    width: 70%;
   }
 }

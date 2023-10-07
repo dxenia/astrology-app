@@ -83,3 +83,11 @@
     font-size: var(--regular-size);
   }
 }
+
+@media (min-width: 2560px) {
+  .flip-card__name,
+  .flip-card__info,
+  .flip-card__button {
+    font-size: 1rem;
+  }
+}
