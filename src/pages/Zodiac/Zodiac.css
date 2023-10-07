@@ -1,9 +1,3 @@
-.description {
-  width: 90%;
-  margin: auto;
-  text-align: start;
-}
-
 .astrology__image {
   display: block;
   margin: auto;
@@ -16,7 +10,7 @@
 .astrology__list {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  padding: var(--space-20);
+  padding: var(--space-20) 0;
 }
 
 @media (min-width: 768px) {
@@ -26,6 +20,7 @@
 
   .astrology__list {
     grid-template-columns: repeat(2, 1fr);
+    padding: var(--space-30);
   }
 }
 
@@ -38,7 +33,18 @@
   .astrology__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: var(--space-30);
     margin: auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .astrology__list {
+    width: 80%;
+  }
+}
+
+@media (min-width: 2360px) {
+  .astrology__list {
+    width: 70%;
   }
 }

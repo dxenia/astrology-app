@@ -2,3 +2,15 @@
   -webkit-filter: invert(80%);
   filter: invert(80%);
 }
+
+.description {
+  width: 90%;
+  margin: auto;
+  text-align: start;
+}
+
+@media (min-width: 1200px) {
+  .description {
+    width: 60%;
+  }
+}

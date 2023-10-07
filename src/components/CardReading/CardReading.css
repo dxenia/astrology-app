@@ -10,6 +10,7 @@
   grid-template-columns: repeat(1, 1fr);
   gap: var(--space-10);
   margin: auto;
+  padding: var(--space-20);
 }
 
 .card__btn--reading {
@@ -20,6 +21,17 @@
 @media (min-width: 920px) {
   .card__list--reading {
     grid-template-columns: repeat(3, 1fr);
-    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card__list--reading {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .card__list--reading {
+    width: 50%;
   }
 }

@@ -63,12 +63,15 @@
 @media (min-width: 1300px) {
   .card__list {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    width: 70%;
   }
 }
 
-@media (min-width: 2560px) {
+@media (min-width: 2360px) {
   .card__list {
-    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 50%;
   }
 }

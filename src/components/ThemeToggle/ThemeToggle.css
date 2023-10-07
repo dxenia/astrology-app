@@ -57,3 +57,15 @@ input:checked + .toggle__slider:before {
     right: 23px;
   }
 }
+
+@media (min-width: 1400px) {
+  .toggle__switch {
+    top: 2px;
+  }
+}
+
+@media (min-width: 2360px) {
+  .toggle__switch {
+    top: 10px;
+  }
+}
