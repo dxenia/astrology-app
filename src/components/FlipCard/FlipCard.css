@@ -66,7 +66,7 @@
 
 @media (min-width: 640px) {
   .flip-card__name {
-    font-size: var(--medium-size);
+    font-size: var(--regular-size);
   }
 
   .flip-card__info {

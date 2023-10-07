@@ -46,8 +46,8 @@
   .card__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 70%;
     margin: auto;
+    width: 90%;
   }
 }
 

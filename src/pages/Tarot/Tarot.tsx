@@ -15,7 +15,7 @@ export default function Tarot() {
   const [page, setPage] = useState(1);
   const [filterCriteria, setFilterCriteria] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
-  const itemsPerPage = 10;
+  const itemsPerPage = 12;
 
   const url = 'https://jps-tarot-api.azurewebsites.net/api/Tarot/GetShuffled';
   const { data: cards, loading, error } = useFetch<TarotProps[]>(url);

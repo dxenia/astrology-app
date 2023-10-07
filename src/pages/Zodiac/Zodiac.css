@@ -39,7 +39,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: var(--space-30);
-    width: 80%;
     margin: auto;
   }
 }
