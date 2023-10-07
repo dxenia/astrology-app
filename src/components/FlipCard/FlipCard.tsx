@@ -1,5 +1,5 @@
 import Button from '../Button/Button.tsx';
-import { TarotCardProps } from '../../types/TarotProps.types.ts';
+import { TarotCardProps } from '../../types/Tarot.types.ts';
 
 import './FlipCard.css';
 
@@ -12,11 +12,11 @@ function TarotCard({ card }: TarotCardProps) {
         </div>
         <div className="flip-card__back">
           <h2 className="flip-card__name">{card.name}</h2>
-          <p className="flip-card__info">Type: {card.type}</p>
-          <p className="flip-card__info">Upright: {card.upright.join(', ')}</p>
-          <p className="flip-card__info">
-            Reversed: {card.reversed.join(', ')}
-          </p>
+          <div className="flip-card__info">
+            <p>Type: {card.type}</p>
+            <p>Upright: {card.upright.join(', ')}</p>
+            <p>Reversed: {card.reversed.join(', ')}</p>
+          </div>
           <Button
             as="link"
             children="Learn More"

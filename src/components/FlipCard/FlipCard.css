@@ -45,7 +45,7 @@
   color: var(--primary-foreground);
   border: 2px solid var(--primary-foreground);
   transform: rotateY(180deg);
-  padding: 1rem;
+  padding: var(--space-15);
   font-size: var(--small-size);
 }
 
@@ -55,8 +55,13 @@
 }
 
 .flip-card__info {
-  padding: 0.5rem;
   text-align: left;
+  padding-bottom: 2rem;
+}
+
+.flip-card__info p {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
 }
 
 @media (min-width: 640px) {

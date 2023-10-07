@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react';
 import useFetch from '../../hooks/useFetch';
 import Button from '../Button/Button';
 import Loading from '../../components/Loading/Loading';
-import FlipCard from '../../components/FlipCard/FlipCard';
-import { TarotProps } from '../../types/TarotProps.types';
+import MagicCard from '../../components/MagicCard/MagicCard';
+import { TarotProps } from '../../types/Tarot.types.ts';
 
 import './CardReading.css';
 
@@ -54,7 +54,7 @@ export default function CardReading() {
       ) : (
         <div className="card__list--reading">
           {selectedCards?.map((card) => (
-            <FlipCard key={card.id} card={card} />
+            <MagicCard key={card.id} card={card} />
           ))}
         </div>
       )}

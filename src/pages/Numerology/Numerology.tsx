@@ -103,7 +103,7 @@ export default function Numerology() {
 
   return (
     <section className="numerology">
-      <h1 className="glow">Numerology Calculator</h1>
+      <h1>Numerology Calculator</h1>
       <p className="numerology__paragraph">
         Numerology has a rich and diverse history that spans millennia. It has
         evolved from ancient mystical beliefs to become a contemporary practice

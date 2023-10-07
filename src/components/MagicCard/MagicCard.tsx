@@ -1,23 +1,37 @@
 import Button from '../Button/Button.tsx';
-import { TarotCardProps } from '../FlipCard/TarotCard.types.ts';
+import { TarotCardProps } from '../../types/Tarot.types.ts';
 
-import './TarotCard.css';
+import './MagicCard.css';
+
+function getRandomBoolean() {
+  return Math.random() < 0.5;
+}
 
 function TarotCard({ card }: TarotCardProps) {
+  const uprightReversed = getRandomBoolean();
+
   return (
     <div className="flip-card">
       <div className="flip-card__inner">
-        <div className="flip-card__front">
-          <img src={card.image} className="flip-card__img" alt={card.name} />
+        <div className="flip-card__front magic-card glow">
+          <span>?</span>
         </div>
         <div className="flip-card__back">
           <h2 className="flip-card__name">{card.name}</h2>
-          <p className="flip-card__info">Type: {card.type}</p>
-          <p className="flip-card__info">Upright: {card.upright.join(', ')}</p>
-          <p className="flip-card__info">
-            Reversed: {card.reversed.join(', ')}
-          </p>
+          <div className="flip-card__info">
+            <p>
+              This card is
+              {uprightReversed ? ' reversed' : ' upright'}.
+            </p>
+            <p>
+              Reflect on the following keywords: {''}
+              {uprightReversed
+                ? card.reversed.join(', ')
+                : card.upright.join(', ')}
+            </p>
+          </div>
           <Button
+            as="link"
             children="Learn More"
             url={card.link}
             target={'_blank'}
