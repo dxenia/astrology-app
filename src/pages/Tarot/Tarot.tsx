@@ -74,14 +74,17 @@ export default function Tarot() {
         </Button>
       </div>
 
-      {/* Search input */}
-      <input
-        type="text"
-        placeholder="Search by name 🔍"
-        value={searchQuery}
-        onChange={(e) => handleSearch(e.target.value)}
-        className="search-input"
-      />
+      <div className="filter-input">
+        <h3>Are you looking for a specific card?</h3>
+        <span>Insert its name below.</span>
+        <input
+          type="text"
+          placeholder="Search by name 🔍"
+          value={searchQuery}
+          onChange={(e) => handleSearch(e.target.value)}
+          className="search-input"
+        />
+      </div>
 
       <div className="card__list">
         {cardsToDisplay.map((card) => (
