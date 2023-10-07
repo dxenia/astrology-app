@@ -20,6 +20,7 @@ export default function ThemeToggle() {
       <label className="toggle__switch">
         <input
           type="checkbox"
+          name="themePreference"
           checked={theme === 'dark'}
           onChange={onChangeHandler}
         />
