@@ -2,7 +2,7 @@ export const accordionData = [
   {
     title: 'Project',
     content: `This is my final project for the FooCoding program held in Malmö between February and October 2023. 
-    The application I developed focuses on astrology, tarot and numerology with the help of API and static data
+    The application I developed focuses on astrology, tarot and numerology with the help of external and internal data
     simultaneously.`,
   },
   {

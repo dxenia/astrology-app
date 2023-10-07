@@ -21,6 +21,7 @@
 @media (min-width: 920px) {
   .card__list--reading {
     grid-template-columns: repeat(3, 1fr);
+    width: 90%;
   }
 }
 
