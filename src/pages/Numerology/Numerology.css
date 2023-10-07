@@ -6,6 +6,7 @@
   align-items: center;
   gap: 1rem;
   margin-bottom: 20%;
+  min-height: 100vh;
 }
 
 /* .glow {

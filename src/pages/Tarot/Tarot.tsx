@@ -60,7 +60,7 @@ export default function Tarot() {
   }, []);
 
   return (
-    <div>
+    <section className="tarot">
       <h1 id="tarots">Tarot Cards</h1>
       {error && <div>{error?.message}</div>}
       {loading && <Loading />}
@@ -97,6 +97,6 @@ export default function Tarot() {
         handlePagination={setPage}
       />
       <CardReading />
-    </div>
+    </section>
   );
 }

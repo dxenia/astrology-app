@@ -1,5 +1,9 @@
 /* first section */
 
+.home {
+  min-height: 100vh;
+}
+
 .home__logo {
   font-size: var(--x-large-size);
   line-height: 0;

@@ -17,7 +17,7 @@ function Zodiac() {
   }
 
   return (
-    <section>
+    <section className="zodiac">
       <h1>Astrology</h1>
       {error && <div>{error?.message}</div>}
       {loading && <Loading />}

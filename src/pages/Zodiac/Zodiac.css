@@ -1,3 +1,7 @@
+.zodiac {
+  min-height: 100vh;
+}
+
 .astrology__image {
   display: block;
   margin: auto;

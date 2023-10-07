@@ -21,7 +21,7 @@ function ZodiacSignDetails() {
   const navigate = useNavigate();
 
   return (
-    <div className="page">
+    <section className="page">
       {error && <div>{error?.message}</div>}
       {loading && <Loading />}
 
@@ -61,7 +61,7 @@ function ZodiacSignDetails() {
           Go back to Zodiac Page
         </Button>
       </div>
-    </div>
+    </section>
   );
 }
 
