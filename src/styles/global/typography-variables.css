@@ -51,17 +51,7 @@
     --regular-size: 1rem;
     --medium-size: 1.5rem;
     --large-size: 5rem;
-    --x-large-size: 9rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  :root {
-    --small-size: 0.8rem;
-    --regular-size: 1rem;
-    --medium-size: 1.5rem;
-    --large-size: 5rem;
-    --x-large-size: 9rem;
+    --x-large-size: 7rem;
   }
 }
 
@@ -72,5 +62,15 @@
     --medium-size: 1.6rem;
     --large-size: 5rem;
     --x-large-size: 9rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  :root {
+    --small-size: 1.3rem;
+    --regular-size: 2rem;
+    --medium-size: 2.5rem;
+    --large-size: 6rem;
+    --x-large-size: 10rem;
   }
 }

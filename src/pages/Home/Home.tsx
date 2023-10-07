@@ -45,7 +45,7 @@ export default function Home() {
       </section>
 
       <section className="home__second-section">
-        <h2>What can you find on Lunar?</h2>
+        <h2 className="home__heading">What can you find on Lunar?</h2>
         <ul className="home__list">
           <li className="home__list-item">
             <img src={moth} className="home__icon invert"></img>
