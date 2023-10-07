@@ -1,19 +1,15 @@
-import { useState } from 'react';
-
 import { AccordionProps } from './Accordion.types';
 
 import './Accordion.css';
 
-const Accordion = ({ title, content }: AccordionProps) => {
-  const [isActive, setIsActive] = useState(false);
-
-  const toggleAccordion = () => {
-    setIsActive(!isActive);
+const Accordion = ({ title, content, isActive, onToggle }: AccordionProps) => {
+  const handleClick = () => {
+    onToggle();
   };
 
   return (
     <div className="accordion__item">
-      <div className="accordion__title" onClick={toggleAccordion}>
+      <div className="accordion__title" onClick={handleClick}>
         <h3>{title}</h3>
         <div>{isActive ? '-' : '+'}</div>
       </div>

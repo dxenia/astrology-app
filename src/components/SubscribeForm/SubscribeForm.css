@@ -18,11 +18,23 @@
   color: var(--tertiary-foreground);
   padding: 0.5rem;
   margin: 0.5rem;
-  width: 25rem;
+  width: 15rem;
 }
 
 .subscribe-form__button {
   color: var(--tertiary-foreground);
   background-color: var(--tertiary-background);
   border: 2px solid var(--tertiary-foreground);
+}
+
+@media (min-width: 768px) {
+  .subscribe-form input {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .subscribe-form input {
+    width: 25rem;
+  }
 }

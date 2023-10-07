@@ -20,16 +20,19 @@
 }
 
 .accordion__content {
+  transition: ease-in-out var(--duration-quick);
   max-height: 0;
   overflow: hidden;
-  transition: max-height var(--duration-slow) ease-in-out;
   text-align: justify;
   margin: 0.5rem;
+  opacity: 0;
 }
 
 .accordion__content.dropped {
-  transition: ease-in-out var(--duration-slowest);
+  transition: ease-in-out var(--duration-slow);
   max-height: 600px;
+  margin: 1.5rem;
+  opacity: 1;
 }
 
 @media (min-width: 768px) {

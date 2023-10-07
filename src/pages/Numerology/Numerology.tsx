@@ -17,22 +17,27 @@ export default function Numerology() {
   const [showCarousel, setShowCarousel] = useState(false);
 
   const calculateLifePathNumber = (): void => {
-    const cleanedDateOfBirth = dateOfBirth.replace(/\D/g, '');
+    if (!fullName || !dateOfBirth) {
+      alert('Please fill in all fields.');
+      return;
+    } else {
+      const cleanedDateOfBirth = dateOfBirth.replace(/\D/g, '');
 
-    let sum = 0;
-    for (let i = 0; i < cleanedDateOfBirth.length; i++) {
-      sum += parseInt(cleanedDateOfBirth[i]);
+      let sum = 0;
+      for (let i = 0; i < cleanedDateOfBirth.length; i++) {
+        sum += parseInt(cleanedDateOfBirth[i]);
+      }
+
+      while (sum > 9 && sum !== 11 && sum !== 22 && sum !== 33) {
+        sum = Math.floor(sum / 10) + (sum % 10);
+      }
+
+      setLifePathNumber(sum);
+
+      calculateExpressionNumber(fullName);
+      calculateSoulUrgeNumber(fullName);
+      setShowCarousel(true);
     }
-
-    while (sum > 9 && sum !== 11 && sum !== 22 && sum !== 33) {
-      sum = Math.floor(sum / 10) + (sum % 10);
-    }
-
-    setLifePathNumber(sum);
-
-    calculateExpressionNumber(fullName);
-    calculateSoulUrgeNumber(fullName);
-    setShowCarousel(true);
   };
 
   const calculateExpressionNumber = useMemo(() => {

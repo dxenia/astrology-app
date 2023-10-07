@@ -1,9 +1,16 @@
+import { useState } from 'react';
 import shapes from '../../assets/images/shapes.gif';
 import Accordion from '../../components/Accordion/Accordion';
 import { accordionData } from '../../data/accordionData';
 import './About.css';
 
 export default function About() {
+  const [activeIndex, setActiveIndex] = useState(-1);
+
+  const toggleAccordion = (index: number) => {
+    setActiveIndex(index === activeIndex ? -1 : index);
+  };
+
   return (
     <section className="about">
       <h1>About</h1>
@@ -15,7 +22,13 @@ export default function About() {
       <img src={shapes} alt="Geometric shapes" className="about__image" />
       <div className="about__accordion">
         {accordionData.map(({ title, content }, index) => (
-          <Accordion key={index} title={title} content={content} />
+          <Accordion
+            key={index}
+            title={title}
+            content={content}
+            isActive={index === activeIndex}
+            onToggle={() => toggleAccordion(index)}
+          />
         ))}
       </div>
     </section>

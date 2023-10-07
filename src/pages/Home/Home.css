@@ -115,7 +115,7 @@ html[data-theme='dark'] .home__img--first-section {
   margin: auto;
   gap: 2rem;
   padding: 2rem;
-  width: 80%;
+  width: 20rem;
   color: var(--tertiary-foreground);
 }
 
@@ -158,5 +158,9 @@ html[data-theme='dark'] .home__list-item:nth-child(3) > .home__icon {
 
   .home__form-wrapper {
     gap: 10rem;
+  }
+
+  .home__form-wrapper article h2 {
+    width: 20rem;
   }
 }
