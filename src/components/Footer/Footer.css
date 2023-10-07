@@ -10,7 +10,7 @@ footer {
 .footer__contact {
   display: flex;
   justify-content: center;
-  text-align: justify;
+  text-align: start;
   width: 90%;
   margin: auto;
   font-size: var(--small-size);

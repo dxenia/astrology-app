@@ -1,6 +1,6 @@
 .reading--description {
   width: 70%;
-  text-align: justify;
+  text-align: start;
   margin: auto;
   padding-bottom: var(--space-20);
 }

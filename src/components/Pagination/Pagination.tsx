@@ -1,5 +1,5 @@
-import { PaginationProps } from './Pagination.types';
 import Button from '../Button/Button';
+import { PaginationProps } from './Pagination.types';
 
 import './Pagination.css';
 

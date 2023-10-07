@@ -98,7 +98,7 @@ html[data-theme='dark'] .home__img--first-section {
   flex-direction: column;
   gap: var(--space-10);
   align-items: center;
-  text-align: justify;
+  text-align: start;
 }
 
 .home__icon {
