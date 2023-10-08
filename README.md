@@ -32,4 +32,5 @@ This is my final project for the FooCoding program held in Malmö between Februa
 - DOM events
 - Conditional rendering
 - List rendering from API
-- react-router-dom(and navigation between at least two pages)- deployment
+- react-router-dom(and navigation between at least two pages)
+- deployment

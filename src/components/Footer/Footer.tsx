@@ -11,8 +11,8 @@ export default function Footer() {
         <img src={downloadAndroid} alt="Download on Google Play" />
       </div>
       <p className="footer__contact">
-        Got any feedback? Up for a chat? Call +46 73 464 39 10, shoot me an
-        email or direct message the socials below.
+        Got any feedback? Up for a chat? Shoot me an email or direct message the
+        socials below.
       </p>
       <ul className="footer__socials">
         <li>
