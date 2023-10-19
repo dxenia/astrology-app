@@ -18,8 +18,6 @@ const useFetch = <T>(url: string) => {
 
         setData(data);
       } catch (error) {
-        console.log(error);
-
         setError(error as Error);
       } finally {
         setTimeout(() => {

@@ -1,4 +1,4 @@
-// Credits to @themuuln on Github for the API data
+// Credits to @themuuln on Github for the API data and formulas
 
 export const soulUrgeLetters: { [key: string]: number } = {
   А: 1,

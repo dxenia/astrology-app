@@ -13,10 +13,14 @@ import {
 import './Home.css';
 
 export default function Home() {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const handleSubmit = (formData: FormData) => {
-    // console.log(formData);
-    alert('Your subscription request has been submitted!');
+  const handleSubmit = (FormData: FormData) => {
+    alert(`Your subscription request has been submitted!
+
+    Your Data:
+    First Name: ${FormData.firstName}
+    Birthday: ${FormData.birthday}
+    Email: ${FormData.email}
+`);
   };
 
   return (

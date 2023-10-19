@@ -21,6 +21,12 @@ export const SubscribeForm = ({ onSubmit }: FormProps) => {
     email: '',
   });
 
+  const initialFormData: FormData = {
+    firstName: '',
+    birthday: '',
+    email: '',
+  };
+
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
 
@@ -34,6 +40,8 @@ export const SubscribeForm = ({ onSubmit }: FormProps) => {
       alert('Please fill in all fields.');
       return;
     }
+
+    setFormData(initialFormData);
 
     onSubmit(formData);
   };
