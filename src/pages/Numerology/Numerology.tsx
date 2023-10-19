@@ -75,7 +75,6 @@ export default function Numerology() {
 
       for (const char of nameWithoutSpaces) {
         const uppercaseChar = char.toUpperCase();
-        console.log(uppercaseChar);
 
         // eslint-disable-next-line no-prototype-builtins
         if (soulUrgeLetters.hasOwnProperty(uppercaseChar)) {
@@ -94,7 +93,6 @@ export default function Numerology() {
       }
 
       setSoulUrgeNumber(soulUrgeNumber);
-      console.log(soulUrgeNumber);
     };
   }, []);
 

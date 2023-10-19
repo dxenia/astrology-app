@@ -12,7 +12,7 @@ function ZodiacSignDetails() {
   const url = `https://jps-tarot-api.azurewebsites.net/api/Zodiac/GetById/${id}`;
 
   const { data: sign, error, loading } = useFetch<ZodiacProps>(url);
-  // console.log(sign);
+
 
   if (error) {
     console.log(`Error: ${error.message}`);

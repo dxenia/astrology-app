@@ -10,8 +10,6 @@ function Zodiac() {
   const url = 'https://jps-tarot-api.azurewebsites.net/api/Zodiac/Get';
   const { data: signs, error, loading } = useFetch<ZodiacProps[]>(url);
 
-  console.log(signs);
-
   if (error) {
     console.log(`Error: ${error.message}`);
   }

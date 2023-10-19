@@ -13,8 +13,9 @@ import {
 import './Home.css';
 
 export default function Home() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const handleSubmit = (formData: FormData) => {
-    console.log(formData);
+    // console.log(formData);
     alert('Your subscription request has been submitted!');
   };
 
