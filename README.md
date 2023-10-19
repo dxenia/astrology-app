@@ -22,7 +22,6 @@ This is my final project for the FooCoding program held in Malmö between Februa
 - Each week, students need to prove to have understood, learned and implemented new topics
 - No external package is allowed other than React and React Router Dom
 - The application must fetch data through an API
-- Team work
 - The application needs to be fully functional on the deployed version
 
 ## Checkpoints
@@ -33,4 +32,4 @@ This is my final project for the FooCoding program held in Malmö between Februa
 - Conditional rendering
 - List rendering from API
 - react-router-dom(and navigation between at least two pages)
-- deployment
+- Deployment
