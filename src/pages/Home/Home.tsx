@@ -13,13 +13,13 @@ import {
 import './Home.css';
 
 export default function Home() {
-  const handleSubmit = (FormData: FormData) => {
+  const handleSubmit = (formData: FormData) => {
     alert(`Your subscription request has been submitted!
 
     Your Data:
-    First Name: ${FormData.firstName}
-    Birthday: ${FormData.birthday}
-    Email: ${FormData.email}
+    First Name: ${formData.firstName}
+    Birthday: ${formData.birthday}
+    Email: ${formData.email}
 `);
   };
 
