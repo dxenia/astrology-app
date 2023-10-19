@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useCallback } from 'react';
 
 import Button from '../../components/Button/Button.tsx';
 import useFetch from '../../hooks/useFetch';
@@ -45,19 +44,19 @@ export default function Tarot() {
     setPage(totalFilteredPages);
   }
 
-  if (error) {
-    console.log(`Error: ${error.message}`);
-  }
+  // if (error) {
+  //   console.log(`Error: ${error.message}`);
+  // }
 
-  const handleFilterChange = useCallback((criteria: string) => {
+  const handleFilterChange = (criteria: string) => {
     setFilterCriteria(criteria);
     setPage(1);
-  }, []);
+  };
 
-  const handleSearch = useCallback((query: string) => {
+  const handleSearch = (query: string) => {
     setSearchQuery(query);
     setPage(1);
-  }, []);
+  };
 
   return (
     <section className="tarot">
