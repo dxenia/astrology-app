@@ -68,6 +68,7 @@ export default function Numerology() {
     };
   }, []);
 
+  // !IMPORTANT! This is a unnecessary implementation of the useMemo hook, only included as a assignment requirement but not useful in a real-case scenario.
   const calculateSoulUrgeNumber = useMemo(() => {
     return (name: string): void => {
       let soulUrgeNumber = 0;
