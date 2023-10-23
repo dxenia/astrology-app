@@ -11,7 +11,7 @@ Deployed version of [LUNAR](lunar-app.netlify.app/).
 - [Features](#features)
 - [Getting started](#getting-started)
 - [Print Screens](#printscreens)
-- [Conclusion] (#conclusion)
+- [Conclusion](#conclusion)
 
 ## Overview
 
