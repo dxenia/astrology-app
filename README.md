@@ -10,8 +10,7 @@ Deployed version of [LUNAR](lunar-app.netlify.app/).
 - [Built with](#built-with)
 - [Features](#features)
 - [Getting started](#getting-started)
-- [Conclusion](#conclusion)
-- [Printscreens](#printscreens)
+- [Print Screens](#printscreens)
 
 ## Overview
 
@@ -47,7 +46,7 @@ npm install
 npm run dev
 ```
 
-## Conclusion
+## Print Screens
 
 ### Light/Dark Mode Comparison
 
