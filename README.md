@@ -1,36 +1,66 @@
-# Lunar☾
+# LUNAR - Astrology, tarot and numerology app
 
-This is my final project for the FooCoding program held in Malmö between February and October 2023. The application I developed focuses on astrology, tarot and numerology with the help of external and internal data simultaneously.
+[React.js](https://react.dev/) web app that fetches data from [Tarot API](https://jps-tarot-api.azurewebsites.net/swagger/index.html). Internal data is also utilized to a limited extent.
 
-## Technologies
+Deployed version of [LUNAR](lunar-app.netlify.app/).
 
-- JSX
-- CSS
+## Table of contents
+
+- [Overview](#overview)
+- [Built with](#built-with)
+- [Features](#features)
+- [Getting started](#getting-started)
+- [Conclusion](#conclusion)
+- [Printscreens](#printscreens)
+
+## Overview
+
+Lunar is a user-friendly app featuring a responsive design that seamlessly transitions between light and dark modes. It's perfect for individuals who want to explore astrology-related subjects but are new to the field. Lunar offers a comprehensive zodiac sign library, a tarot card collection, personalized tarot card readings, and a numerology calculator based on birth date and name.
+
+## Built with
+
 - React.js
 - TypeScript
+- CSS
+- Swagger UI
 
-## Sections
+## Features
 
-- Home
-- About
-- Zodiac
-- Tarot
-- Numerology
+- Data Fetching from Tarot API using Swagger UI allowing users to access a wide range of tarot-related information.
+- Integration with the React.js framework for delivering a fast and smooth user experience.
+- Intuitive and responsive user interface.
+- Light/Dark Mode Switch enhancing the application's accessibility.
+- Zodiac signs library with
+- Flip tarot cards library including filtering and search bar.
+- Individual tarot card readings, which can be regenerated onclick.
+- A tool that calculates numerology insights based on user input, such as age and name, expanding the app's offerings.
+- Utilization of internal data to perform numerical calculations.
 
-## Requirements
+## Getting started
 
-- Each week, students need to prove to have understood, learned and implemented new topics
-- No external package is allowed other than React and React Router Dom
-- The application must fetch data through an API
-- Team work
-- The application needs to be fully functional on the deployed version
+If you want to run the project locally, you need to make sure you have [Node.js](https://nodejs.org/it) installed on your device. Then, simply clone the repository, install dependencies and start the development server using the line commands listed below.
 
-## Checkpoints
+```
+git clone https://github.com/dxenia/astrology-app.git
+cd astrology-app
+npm install
+npm run dev
+```
 
-- Inclusion of type-safe components
-- Hooks(useState, useEffect, useRef, useCallback, useMemo)
-- DOM events
-- Conditional rendering
-- List rendering from API
-- react-router-dom(and navigation between at least two pages)
-- deployment
+## Conclusion
+
+### Light/Dark Mode Comparison
+
+<img src="./src/assets/printscreens/light-mode.png" width=600>
+<img src="./src/assets/printscreens/dark-mode.png" width=600>
+
+### Responsive design
+
+Mobile:<br />
+<img src="./src/assets/printscreens/mobile.png" width=200>
+
+Tablet:<br />
+<img src="./src/assets/printscreens/tablet.png" width=400>
+
+Laptop:<br />
+<img src="./src/assets/printscreens/laptop.png" width=600>
