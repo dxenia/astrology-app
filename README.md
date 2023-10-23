@@ -1,6 +1,6 @@
-# LUNAR - Astrology, tarot and numerology app
+# LUNAR - Astrology, Tarot and Numerology App
 
-[React.js](https://react.dev/) web app that fetches data from [Tarot API](https://jps-tarot-api.azurewebsites.net/swagger/index.html). Internal data is also utilized to a limited extent.
+[React.js](https://react.dev/) web app that fetches data from [Tarot API](https://jps-tarot-api.azurewebsites.net/swagger/index.html). Internal data is also employed to a limited extent.
 
 Deployed version of [LUNAR](lunar-app.netlify.app/).
 
@@ -11,6 +11,7 @@ Deployed version of [LUNAR](lunar-app.netlify.app/).
 - [Features](#features)
 - [Getting started](#getting-started)
 - [Print Screens](#printscreens)
+- [Conclusion] (#conclusion)
 
 ## Overview
 
@@ -63,3 +64,7 @@ Tablet:<br />
 
 Laptop:<br />
 <img src="./src/assets/printscreens/laptop.png" width=600>
+
+## Conclusion
+
+This application showcases the synergy of React.js and API integration, exemplifying the creation of a user-friendly and compelling digital experience. Its architecture allows for seamless scalability, making it a solid foundation for future enhancements and feature expansions.
