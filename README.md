@@ -2,7 +2,7 @@
 
 [React.js](https://react.dev/) web app that fetches data from [Tarot API](https://jps-tarot-api.azurewebsites.net/swagger/index.html). Internal data is also employed to a limited extent.
 
-Deployed version of [LUNAR](lunar-app.netlify.app/).
+Deployed version of [LUNAR](https://lunar-app.netlify.app/).
 
 ## Table of contents
 
